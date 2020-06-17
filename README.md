@@ -38,7 +38,7 @@ Open Source Enthusiasts willing to contribute through their skills while upskill
 - Selection of technologies to be used will be done dynamically as per skill sets of the team & demand of the project 
 - Suggested technologies include : **MERN Stack** or **Python- Flask/ Django** along with basic front-end tech: HTML, CSS, JS
 
-## Want to contribute making this more project?
+## Want to contribute making this project more awesome?
 
 - [Apply here:](http://pclubsummerofcode.in/)
 - [How to apply: ](https://youtu.be/929VTAFi9EI)
