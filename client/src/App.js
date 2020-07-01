@@ -12,12 +12,13 @@ function App() {
       <Switch>
         <Route exact path='/elements'>
           <Elements />
+          
         </Route>
         <Route exact path='/team'>
           <Team />
         </Route>
         <Route exact path='/'>
-          <Home />
+        <Home />
         </Route>
       </Switch>
     </Router>
