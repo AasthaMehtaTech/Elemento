@@ -16,7 +16,7 @@ const useStyles = makeStyles({
   },
 });
 
-const ElementItem = (name) => {
+const ElementItem = ({name}) => {
   const classes = useStyles();
 
   return (

@@ -14,12 +14,13 @@ const Element = () => {
     }, [])
 
     if(elements === null){
+        
         return <h1> loading </h1>
     }
     return (
         <Fragment>
             
-            {elements.map((element) => <ElementItem name={element.name} />)}
+            {elements.map((element) => <ElementItem name={element.name} key={element._id} />)}
 
         </Fragment>
     )

@@ -1,6 +1,7 @@
 const express = require("express");
 const passport = require("passport");
 const session = require("express-session");
+const cors = require('cors');
 
 const elementRouter = require("./routes/elementRoute");
 const authRouter = require("./routes/authRoute");
@@ -19,6 +20,8 @@ app.use(
     saveUninitialized: true,
   })
 );
+
+app.use(cors());
 
 // Passport Config
 require("./config/passport")(passport);
