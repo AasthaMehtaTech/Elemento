@@ -24,7 +24,7 @@ const upload = multer({
 router.get("/", async (req, res) => {
   var elements = [];
   elements = await Element.find();
-  res.send(elements);
+  res.json({elements: elements});
 });
 
 // Get all the elements of specific type

@@ -1,6 +1,7 @@
 import React from "react";
 
 import Navbar from "../layout/Navbar";
+
 import ScrollTopButton from "../layout/ScrollTopButton";
 
 const Home = () => {
