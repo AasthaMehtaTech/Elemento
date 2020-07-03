@@ -24,7 +24,7 @@ const upload = multer({
 router.get("/", async (req, res) => {
   var elements = [];
   elements = await Element.find();
-  res.send(elements);
+  res.json(elements);
 });
 
 // Get all the elements of specific type
@@ -32,7 +32,7 @@ router.get("/", async (req, res) => {
 router.get("/:name", async (req, res) => {
   var elements = [];
   elements = await Element.find({ name: req.params.name });
-  res.send(elements);
+  res.sendelements);
 });
 
 // Save a new element to DB

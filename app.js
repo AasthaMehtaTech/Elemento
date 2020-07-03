@@ -25,8 +25,8 @@ require("./config/passport")(passport);
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use("/elements", elementRouter);
-app.use("/auth", authRouter);
+app.use("/api/elements", elementRouter);
+app.use("/api/auth", authRouter);
 
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
