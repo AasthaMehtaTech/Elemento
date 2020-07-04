@@ -203,9 +203,9 @@ const companyName ={
   color: "rgba(0,0,0,0.6)",
   textDecoration:"none",
   fontWeight:"bold",
-  fontSize: "25px",
-  letterSpacing:"2px",
-  textTransform: "uppercase" ,
+  fontSize: "26px",
+  letterSpacing:"1px",
+  // textTransform: "uppercase" ,
   
 }
 const customStyle = {
