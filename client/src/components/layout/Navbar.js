@@ -10,8 +10,7 @@ import InputBase from '@material-ui/core/InputBase';
 
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
-import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
+
 import AccountCircle from '@material-ui/icons/AccountCircle';
 
 import MoreIcon from '@material-ui/icons/MoreVert';
@@ -30,30 +29,30 @@ const useStyles = makeStyles((theme) => ({
       display: 'block',
     },
   },
-  search: {
-    position: 'relative',
-    borderRadius: theme.shape.borderRadius,
-    backgroundColor: fade(theme.palette.common.white, 0.15),
-    '&:hover': {
-      backgroundColor: fade(theme.palette.common.white, 0.25),
-    },
-    marginRight: theme.spacing(2),
-    marginLeft: 0,
-    width: '100%',
-    [theme.breakpoints.up('sm')]: {
-      marginLeft: theme.spacing(3),
-      width: 'auto',
-    },
-  },
-  searchIcon: {
-    padding: theme.spacing(0, 2),
-    height: '100%',
-    position: 'absolute',
-    pointerEvents: 'none',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  // search: {
+  //   position: 'relative',
+  //   borderRadius: theme.shape.borderRadius,
+  //   backgroundColor: fade(theme.palette.common.white, 0.15),
+  //   '&:hover': {
+  //     backgroundColor: fade(theme.palette.common.white, 0.25),
+  //   },
+  //   marginRight: theme.spacing(2),
+  //   marginLeft: 0,
+  //   width: '100%',
+  //   [theme.breakpoints.up('sm')]: {
+  //     marginLeft: theme.spacing(3),
+  //     width: 'auto',
+  //   },
+  // },
+  // searchIcon: {
+  //   padding: theme.spacing(0, 2),
+  //   height: '100%',
+  //   position: 'absolute',
+  //   pointerEvents: 'none',
+  //   display: 'flex',
+  //   alignItems: 'center',
+  //   justifyContent: 'center',
+  // },
   inputRoot: {
     color: 'inherit',
   },
@@ -151,26 +150,14 @@ function PrimarySearchAppBar() {
 
   return (
     <div className={classes.grow}>
-      <AppBar position="static">
+      <AppBar position="static" style={appBar}>
          <Container fixed>
         <Toolbar>
           
           <Typography className={classes.title} variant="h6"  noWrap>
            <Link to='/'style={companyName}> Customize Portfolio</Link>
           </Typography>
-          <div className={classes.search}>
-            <div className={classes.searchIcon}>
-              <SearchIcon />
-            </div>
-            <InputBase
-              placeholder="Search…"
-              classes={{
-                root: classes.inputRoot,
-                input: classes.inputInput,
-              }}
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </div>
+          
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             
@@ -184,7 +171,8 @@ function PrimarySearchAppBar() {
               aria-controls={menuId}
               aria-haspopup="true"
               onClick={handleProfileMenuOpen}
-              color="inherit"
+              // for the usericon
+              // color="inherit"
             >
               <AccountCircle />
             </IconButton>
@@ -212,21 +200,28 @@ function PrimarySearchAppBar() {
 }
 
 const companyName ={
-  color: "white",
+  color: "rgba(0,0,0,0.6)",
   textDecoration:"none",
   fontWeight:"bold",
   fontSize: "25px",
   letterSpacing:"2px",
-  textTransform: "uppercase" 
+  textTransform: "uppercase" ,
+  
 }
 const customStyle = {
-  color: "white",
+  color: "rgba(0,0,0,0.6)",
   textDecoration:"none",
   fontWeight:"bold",
-  fontSize: "18px",
+  fontSize: "13px",
   letterSpacing:"2px",
   textTransform: "uppercase"
 
+ 
+
+}
+const appBar =
+{
+  backgroundColor: "white"
 }
 
 export default  PrimarySearchAppBar
