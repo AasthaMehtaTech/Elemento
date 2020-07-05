@@ -22,7 +22,6 @@ const Element = () => {
     return (
         <Fragment>
             <Container maxWidth="sm">
-            {console.log(elements[0].screenshot.data)}
             {elements.map((element) => <ElementItem name={element.name} img={element.screenshot.data} key={element._id} />)}
             </Container>
         </Fragment>

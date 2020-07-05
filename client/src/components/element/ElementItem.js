@@ -26,11 +26,12 @@ const ElementItem = ({ name, img }) => {
         <CardMedia
           component='img'
           height='140'
-          src={`data:image/jpg;base64,${arrayBufferToBase64({img})}`}
+          src={`data:image/jpg;base64,${arrayBufferToBase64({img}.img)}`}
           title='Element'
         />
         <CardContent>
           <Typography gutterBottom variant='h5' component='h2'>
+            {console.log({img})}
             {name}
           </Typography>
         </CardContent>
