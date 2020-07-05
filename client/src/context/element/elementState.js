@@ -27,7 +27,7 @@ const getElements = async () => {
   try {
     console.log('getElements call')
     const data = await axios.get("/api/elements");
-    console.log(data.data.elements);
+    // console.log(data.data.elements);
     dispatch({ type: GET_ELEMENTS, payload: data.data.elements });
   } catch (e) {
     console.error(e);
