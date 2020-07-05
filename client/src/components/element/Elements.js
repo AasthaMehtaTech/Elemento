@@ -1,6 +1,8 @@
 import React, { useEffect, useContext, Fragment } from 'react';
 
 import ElementItem from './ElementItem';
+import Container from '@material-ui/core/Container';
+
 
 import ElementContext from '../../context/element/elementContext';
 
@@ -19,9 +21,9 @@ const Element = () => {
     }
     return (
         <Fragment>
-            
-            {elements.map((element) => <ElementItem name={element.name} key={element._id} />)}
-
+            <Container maxWidth="sm">
+            {elements.map((element) => <ElementItem name={element.name} img={element.screenshot.data} key={element._id} />)}
+            </Container>
         </Fragment>
     )
 }
