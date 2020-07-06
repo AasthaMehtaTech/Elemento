@@ -19,8 +19,4 @@
     
 }
 
-    @media only screen and (max-width:600px){
-        div.back-image{
-       max-width: max-content;
-        }
-    }
+ 
