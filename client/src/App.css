@@ -11,9 +11,16 @@
     letter-spacing: 2px;
     font-size: 4vh;
     padding-bottom: 2vh;
+    margin-top: 10vh;
 }
 .para{
     color: #707070;
     font-size: 20px;
     
 }
+
+    @media only screen and (max-width:600px){
+        div.back-image{
+       max-width: max-content;
+        }
+    }
