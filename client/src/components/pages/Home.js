@@ -28,30 +28,32 @@ const Home = () => {
 
   
   return (
-    <div>
-     
+
+    <div  >
+      <div className="back-image">
       <Navbar />
       <ScrollTopButton />
-      <div className="back-image"  >
+     
       <Container maxWidth="lg">
       <Container>
       <h1 className="title">Graphic Elements for Everyone</h1>
-      <p className="para">A set of small, responsive CSS modules that</p>
-      <p  className="para"> you can use in every web project,
+      <p className="para"> A set of small, responsive CSS modules that <br/>you can use in every web project,
          portfolio or both.</p>
-         <p className="para" style={{paddingBottom:"5vh"}}> Download the CSS modules for free, or contribute!</p>
+      
+         <p className="para" style={{paddingBottom:"5vh"}}> Download the CSS modules for free,<br/>or contribute!</p>
      <StyledButton>Get Started</StyledButton>
      &nbsp;
      <Button variant="outlined" color="cyan" style={btnStyle}> Learn More</Button> 
      
         </Container>
      
-      
+
       </Container>
      
       </div>
      
-               </div>
+     </div>
+
   );
 };
 const btnStyle = {
