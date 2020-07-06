@@ -1,0 +1,19 @@
+.back-image{
+    background-image: url(./img/home.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.title{
+   color:#707070;
+    letter-spacing: 2px;
+    font-size: 4vh;
+    padding-bottom: 2vh;
+}
+.para{
+    color: #707070;
+    font-size: 20px;
+    
+}
