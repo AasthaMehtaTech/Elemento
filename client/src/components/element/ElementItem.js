@@ -28,7 +28,7 @@ const ElementItem = ({ name, img }) => {
 
   return (
     <div  style={elementStyle}>
-    <Card className={classes.root}>
+    <Card className={classes.root} style={cardStyle}>
       <CardActionArea>
         <CardMedia
           component='img'
@@ -76,6 +76,10 @@ const elementStyle = {
   gridGap:'1rem'
 }
 
+const cardStyle = {
+  margin:'20px',
+  boxShadow: '3px 3px 5px 6px #ccc',
+}
 
 const arrayBufferToBase64 = (buffer) => {
   var binary = "";
