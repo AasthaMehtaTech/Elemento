@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
 import Navbar from "../layout/Navbar";
+
 import ScrollTopButton from "../layout/ScrollTopButton";
 
 
@@ -27,6 +28,7 @@ const Home = () => {
 
   
   return (
+
     <div  >
       <div className="back-image">
       <Navbar />
@@ -45,12 +47,13 @@ const Home = () => {
      
         </Container>
      
-      
+
       </Container>
      
       </div>
      
      </div>
+
   );
 };
 const btnStyle = {
