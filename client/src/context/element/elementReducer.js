@@ -5,13 +5,18 @@ import {
   SET_LOADING,
 } from "../types";
 
-export default  (state, action) => {
+export default (state, action) => {
   switch (action.type) {
     case GET_ELEMENTS:
       return {
         ...state,
         elements: action.payload,
         loading: false,
+      };
+    case SEARCH_ELEMENT:
+      return {
+        ...state,
+        filtered: state.elements,
       };
     case SET_LOADING:
       return {

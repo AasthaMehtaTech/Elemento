@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '../layout/Navbar';
 import ScrollTopButton from '../layout/ScrollTopButton';
 import Element from '../element/Elements';
+import SearchBar from '../element/SearchBar';
 
 import ElementState from '../../context/element/elementState';
 
@@ -12,7 +13,7 @@ const Elements = () => {
             <ElementState>
             <Navbar />
             <ScrollTopButton />
-            <h1>Elements Page</h1>
+           <SearchBar />
             <Element />
             </ElementState>
         </div>

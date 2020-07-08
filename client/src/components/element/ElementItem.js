@@ -78,7 +78,7 @@ const elementStyle = {
 
 const cardStyle = {
   margin:'20px',
-  boxShadow: '3px 3px 5px 6px #ccc',
+  boxShadow: '0px 6px 15px 10px #ccc',
 }
 
 const arrayBufferToBase64 = (buffer) => {
