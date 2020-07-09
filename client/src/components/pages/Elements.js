@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from '../layout/Navbar';
 import ScrollTopButton from '../layout/ScrollTopButton';
 import Element from '../element/Elements';
-import SearchBar from '../element/SearchBar';
+import SearchFilter from '../element/SearchFilter';
 
 import ElementState from '../../context/element/elementState';
 
@@ -12,8 +12,8 @@ const Elements = () => {
         <div>
             <ElementState>
             <Navbar />
+            <SearchFilter />
             <ScrollTopButton />
-           <SearchBar />
             <Element />
             </ElementState>
         </div>

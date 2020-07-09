@@ -16,7 +16,10 @@ export default (state, action) => {
     case SEARCH_ELEMENT:
       return {
         ...state,
-        filtered: state.elements,
+        filtered: state.elements.filter((element) => {
+          const regex = new RegExp(`${action.payload}`, "gi");
+          return element.name.match(regex);
+        }),
       };
     case SET_LOADING:
       return {
@@ -27,3 +30,4 @@ export default (state, action) => {
       return state;
   }
 };
+

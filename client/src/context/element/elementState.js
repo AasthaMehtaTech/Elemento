@@ -40,9 +40,9 @@ const searchElements = (text) => {
 
   try {
 
-
+    console.log(state.elements);
     dispatch({ type: SEARCH_ELEMENT, payload: text });
-
+    console.log(state.filtered)
   } catch (e) {
     console.error(e);
   }
