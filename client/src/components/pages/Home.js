@@ -33,7 +33,9 @@ const Home = () => {
       <div className="back-image">
       <Navbar />
       <ScrollTopButton />
-     
+
+      <div className="back-image">
+
       <Container maxWidth="lg">
       <Container>
       <h1 className="title">Graphic Elements for Everyone</h1>
