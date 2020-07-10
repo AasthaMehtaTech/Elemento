@@ -6,6 +6,7 @@ import Container from "@material-ui/core/Container";
 import Navbar from "../layout/Navbar";
 
 import ScrollTopButton from "../layout/ScrollTopButton";
+import Example from "../layout/example";
 
 const StyledButton = withStyles({
   root: {
@@ -26,34 +27,33 @@ const StyledButton = withStyles({
 const Home = () => {
   return (
     <div>
-      <div className='back-image'>
-        <Navbar />
-        <ScrollTopButton />
 
-        <Container maxWidth='lg'>
-          <Container>
-            <h1 className='title'>Graphic Elements for Everyone</h1>
-            <p className='para'>
-              {" "}
-              A set of small, responsive CSS modules that <br />
-              you can use in every web project, portfolio or both.
-            </p>
-            <p className='para' style={{ paddingBottom: "5vh" }}>
-              {" "}
-              Download the CSS modules for free,
-              <br />
-              or contribute!
-            </p>
-            <StyledButton>Get Started</StyledButton>
-            &nbsp;
-            <Button variant='outlined' color='cyan' style={btnStyle}>
-              {" "}
-              Learn More
-            </Button>
-          </Container>
+      <div className="back-image">
+      <Navbar />
+      <ScrollTopButton />
+     
+      <Container maxWidth="lg">
+      <Container>
+      <h1 className="title">Graphic Elements for Everyone</h1>
+      <p className="para"> A set of small, responsive CSS modules that <br/>you can use in every web project,
+         portfolio or both.</p>
+      
+         <p className="para" style={{paddingBottom:"5vh"}}> Download the CSS modules for free,<br/>or contribute!</p>
+     <StyledButton>Get Started</StyledButton>
+     &nbsp;
+     <Button variant="outlined" color="cyan" style={btnStyle}> Learn More</Button> 
+     
         </Container>
+     
+
+      </Container>
+     
       </div>
-    </div>
+     <Example />
+     </div>
+
+
+
   );
 };
 const btnStyle = {

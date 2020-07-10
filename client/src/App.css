@@ -22,3 +22,15 @@
    }
 
 
+ .sec-backImage{
+     background-image: url(./img/Background\ diagrams.svg);
+     height: auto;
+     width:auto;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     /* opacity: 0.6; */
+     
+ }
+ 
+
