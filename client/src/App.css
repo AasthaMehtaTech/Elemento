@@ -1,5 +1,5 @@
 .back-image{
-    background-image: url(./img/home.png);
+    background-image: url(./img/home.svg);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,6 +21,7 @@
 
    }
 
+
  .sec-backImage{
      background-image: url(./img/Background\ diagrams.svg);
      height: auto;
@@ -32,3 +33,4 @@
      
  }
  
+
