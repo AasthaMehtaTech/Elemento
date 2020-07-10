@@ -5,6 +5,7 @@ import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
 import Navbar from "../layout/Navbar";
 import ScrollTopButton from "../layout/ScrollTopButton";
+import Example from "../layout/example";
 
 
 const StyledButton = withStyles({
@@ -27,7 +28,7 @@ const Home = () => {
 
   
   return (
-    <div  >
+    <div>
       <div className="back-image">
       <Navbar />
       <ScrollTopButton />
@@ -49,7 +50,7 @@ const Home = () => {
       </Container>
      
       </div>
-     
+     <Example />
      </div>
   );
 };
