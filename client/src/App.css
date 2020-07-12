@@ -1,5 +1,5 @@
 .back-image{
-    background-image: url(./img/home.png);
+    background-image: url(./img/home.svg);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,9 +11,26 @@
     letter-spacing: 2px;
     font-size: 4vh;
     padding-bottom: 2vh;
+
+    margin-top: 10vh;
+
 }
 .para{
     color: #707070;
     font-size: 20px;
-    
-}
+
+   }
+
+
+ .sec-backImage{
+     background-image: url(./img/Background\ diagrams.svg);
+     height: auto;
+     width:auto;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     /* opacity: 0.6; */
+     
+ }
+ 
+
