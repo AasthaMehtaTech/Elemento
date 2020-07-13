@@ -5,6 +5,8 @@ import Button from "@material-ui/core/Button";
 import Container from "@material-ui/core/Container";
 import Navbar from "../layout/Navbar";
 
+import Footer from "../layout/Footer";
+
 import ScrollTopButton from "../layout/ScrollTopButton";
 import Example from "../layout/example";
 
@@ -50,6 +52,7 @@ const Home = () => {
      
       </div>
      <Example />
+     <Footer />
      </div>
 
 
