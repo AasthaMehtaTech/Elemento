@@ -43,7 +43,7 @@ const Home = () => {
          portfolio or both.</p>
       
          <p className="para" style={{paddingBottom:"5vh"}}> Download the CSS modules for free,<br/>or contribute!</p>
-     <StyledButton>Get Started</StyledButton>
+     <StyledButton className="btn">Get Started</StyledButton>
      &nbsp;
      <Button variant="outlined" color="cyan" style={btnStyle}> Learn More</Button> 
      
