@@ -5,6 +5,8 @@ import Button from "@material-ui/core/Button";
 import Container from "@material-ui/core/Container";
 import Navbar from "../layout/Navbar";
 
+import Footer from "../layout/Footer";
+
 import ScrollTopButton from "../layout/ScrollTopButton";
 import Example from "../layout/example";
 
@@ -18,9 +20,11 @@ const StyledButton = withStyles({
     padding: "0 30px",
     boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
     fontSize: "2vh",
+   
   },
   label: {
     textTransform: "capitalize",
+    
   },
 })(Button);
 
@@ -39,7 +43,7 @@ const Home = () => {
          portfolio or both.</p>
       
          <p className="para" style={{paddingBottom:"5vh"}}> Download the CSS modules for free,<br/>or contribute!</p>
-     <StyledButton>Get Started</StyledButton>
+     <StyledButton className="btn">Get Started</StyledButton>
      &nbsp;
      <Button variant="outlined" color="cyan" style={btnStyle}> Learn More</Button> 
      
@@ -50,6 +54,7 @@ const Home = () => {
      
       </div>
      <Example />
+     <Footer />
      </div>
 
 

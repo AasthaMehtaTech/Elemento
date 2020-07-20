@@ -19,10 +19,24 @@ const SearchFilter = () => {
     }
   };
   return (
-    <form>
-      <input type={text} type='text' onChange={onChange} />
+    <form style={customSearch}>
+      <input type={text} type='text' placeholder="Search" onChange={onChange} style={inputStyle }/>
     </form>
   );
 };
+const inputStyle = {
+  height:'50px',
+  width:'50%',
+  textAlign:'center',
+  borderRadius:'20px',
+  boxShadow:'3px 3px #888888',
+  fontSize:'20px'
+  
+}
+const customSearch = {
+  textAlign: 'center',
+  margin:"12px",
+  padding:"10px",
 
+};
 export default SearchFilter;
