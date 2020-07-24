@@ -8,7 +8,7 @@ import backimage  from '../../img/Blueback.svg'
 const Team = () => {
     return (
         
-        <div >
+        <div className="backTeam" >
             <Navbar />
             <ScrollTopButton />
            
