@@ -1,49 +1,76 @@
-import React, { useState, useEffect } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Modal from '@material-ui/core/Modal';
+import React, { useState, useEffect, useContext, Fragment } from "react";
+import ElementContext from '../../context/element/elementContext';
+import { makeStyles } from "@material-ui/core/styles";
+import Modal from "@material-ui/core/Modal";
+import Grid from '@material-ui/core/Grid';
+
+import JsEditor from '../editor/JsEditor';
+import CSSEditor from '../editor/CSSEditor';
+import HTMLEditor from '../editor/HTMLEditor';
+
 
 
 const useStyles = makeStyles((theme) => ({
-    paper: {
-      position: 'absolute',
-      width: 400,
-      backgroundColor: theme.palette.background.paper,
-      border: '2px solid #000',
-      boxShadow: theme.shadows[5],
-      padding: theme.spacing(2, 4, 3),
-    },
-  }));
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    position: "absolute",
+    width: '1000px',
+    backgroundColor: theme.palette.background.paper,
+    boxShadow: theme.shadows[8],
+    padding: theme.spacing(2, 4, 3),
+  },
+}));
 
- const ElementModal = (props) => {
-    const classes = useStyles();
+const ElementModal = (props) => {
+  const classes = useStyles();
 
-    const [open, setOpen] = useState(props.isOpen);
+  const [open, setOpen] = useState(props.isOpen);
 
-    useEffect(() => setOpen(props.isOpen))
-  
-    const body = (
-      <div style={{transform: 'translate(50%, 50%)'}} className={classes.paper}>
-        <h2 id="simple-modal-title">Text in a modal</h2>
-        <p id="simple-modal-description">
-          Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-        </p>
+  useEffect(() => setOpen(props.isOpen));
+
+  const elementContext = useContext(ElementContext);
+ 
+  const body = (
+    <Fragment>
+    <div style={{ transform: "translate(30%, 50%)" }} className={classes.paper}>
+       <div className={classes.root}>
+      <Grid container spacing={3}>
+        <Grid item xs={4}>
+        <JsEditor code={props.code} />
+        </Grid>
+
     
-      </div>
-    );
-  
-    return (
-      <div>
-      
-        <Modal
+        <Grid item xs={4}>
+        <HTMLEditor code={props.code} />
+        </Grid>
+
+
+        <Grid item xs={4}>
+        
+      <CSSEditor code={props.code} />
+        </Grid>
+        </Grid>
+     
+   
+    </div>
+    </div>
+    </Fragment>
+  );
+
+  return (
+    <div>
+      <Modal
         open={open}
         onClose={props.close}
-          aria-labelledby="simple-modal-title"
-          aria-describedby="simple-modal-description"
-        >
-          {body}
-        </Modal>
-      </div>
-    );
-  }
+        aria-labelledby='simple-modal-title'
+        aria-describedby='simple-modal-description'
+      >
+        {body}
+      </Modal>
+    </div>
+  );
+};
 
-  export default ElementModal;
+export default ElementModal;

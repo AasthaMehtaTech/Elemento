@@ -41,6 +41,7 @@ const Element = () => {
         {filtered === null
           ? elements.map((element) => (
             <ElementItem
+              code={element.code}
               name={element.name}
               img={element.screenshot.data}
               key={element._id}

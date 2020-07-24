@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
-    "codemirror": "^5.55.0",
+    "codemirror": "^5.56.0",
     "concurrently": "^5.2.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
