@@ -1,0 +1,79 @@
+/* The Modal (background) */
+img:hover{
+position: relative;
+bottom:5%;
+
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: relative; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ }
+
+/* Modal Content box */
+.modal-content {
+  position: relative;
+
+  /* background-color: #fefefe;  */
+  margin: auto;/*margin: 15% auto;  15% from the top and centered */
+  padding: 0;
+  /* border: 1px solid #888; */
+  width: 100%;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+.imgsize {
+  width: "250px";
+  height: "250px";
+};
+
+/* The Close Button */
+/* .close {
+  color:black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} */
+
+/* Modal Header */
+.modal-header {
+  padding: 2px 16px;
+  background-color: #fc5a03;
+  color: white;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer #5cb85c;*/
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #fc5a03;
+  color: white;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+.dialog {
+  border: none;
+  opacity: 1;
+  width: 250px;
+}
