@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
@@ -8,11 +8,10 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
-
-
-
 import CodeIcon from "@material-ui/icons/Code";
 import GetAppRoundedIcon from "@material-ui/icons/GetAppRounded";
+
+import ElementModal from './ElementModal';
 
 const useStyles = makeStyles({
   root: {
@@ -21,65 +20,73 @@ const useStyles = makeStyles({
 });
 
 
-
-
 const ElementItem = ({ name, img }) => {
   const classes = useStyles();
 
-  return (
-    <div  style={elementStyle}>
-    <Card className={classes.root} style={cardStyle}>
-      <CardActionArea>
-        <CardMedia
-          component='img'
-          height='140'
-          src={`data:image/png;base64,${arrayBufferToBase64({ img }.img)}`}
-          title='Element'
-        />
-        <CardContent>
-          <Typography gutterBottom variant='h5' component='h2'>
-            {name}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-       
-        <Button
-          size='small'
-          color='seconday'
-          variant='outlined'
-          startIcon={<GetAppRoundedIcon />}
-        >
-          Download
-        </Button>
+  const [isOpen, setIsOpen] = useState(false);
 
-        <Button
-          variant='contained'
-          color='primary'
-          size='small'
-          className={classes.button}
-          startIcon={<CodeIcon />}
-        >
-          View Code
-        </Button>
-      </CardActions>
-    </Card>
+  const handleOpen = () => {
+    setIsOpen(true);
+  }
+  
+  const handleClose = () => {
+    setIsOpen(false);
+  }
+
+  return (
+    <div style={elementStyle}>
+      <Card className={classes.root} style={cardStyle}>
+        <CardActionArea>
+          <CardMedia
+            component='img'
+            height='140'
+            src={`data:image/png;base64,${arrayBufferToBase64({ img }.img)}`}
+            title='Element'
+          />
+          <CardContent>
+            <Typography gutterBottom variant='h5' component='h2'>
+              {name}
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button
+            size='small'
+            color='seconday'
+            variant='outlined'
+            startIcon={<GetAppRoundedIcon />}
+          >
+            Download
+          </Button>
+
+          <Button
+            variant='contained'
+            color='primary'
+            size='small'
+            className={classes.button}
+            startIcon={<CodeIcon />}
+            onClick={handleOpen}
+          >
+            View Code
+          </Button>
+        </CardActions>
+      </Card>
+      <ElementModal isOpen={isOpen} close={handleClose} />
     </div>
   );
 };
 
-
 const elementStyle = {
-  alignContent:'center',
-  display: 'inline-grid',
-  gridTemplateColoumns: 'repeat(3, 1fr)',
-  gridGap:'1rem'
-}
+  alignContent: "center",
+  display: "inline-grid",
+  gridTemplateColoumns: "repeat(3, 1fr)",
+  gridGap: "1rem",
+};
 
 const cardStyle = {
-  margin:'20px',
-  boxShadow: '0px 6px 15px 10px #ccc',
-}
+  margin: "20px",
+  boxShadow: "0px 6px 15px 10px #ccc",
+};
 
 const arrayBufferToBase64 = (buffer) => {
   var binary = "";
