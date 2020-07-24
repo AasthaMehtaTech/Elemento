@@ -38,11 +38,28 @@
     background-color: salmon;
     color:black;
 }
-.teamBackground{
-    background-image: url(./img/Blueback.svg);
-    height: auto;
-    width: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+
+.titleTeam{
+    color:#707070;
+     letter-spacing: 2px;
+     font-size: 4vh;
+     padding-bottom: 2vh;
+      text-align: center;
+     margin-top: 5vh;
+      
+ }
+ .paraTeam{
+     color: #707070;
+     font-size: 20px;
+     text-align: center;
+ 
+    }
+    .contentTeam{
+        padding-bottom: 10vh;
+        margin-bottom: auto;
+    }
+ .backg{
+  z-index: 1;
+  position: relative;
+ 
+ }
