@@ -35,30 +35,7 @@ const useStyles = makeStyles((theme) => ({
       display: 'block',
     },
   },
-  // search: {
-  //   position: 'relative',
-  //   borderRadius: theme.shape.borderRadius,
-  //   backgroundColor: fade(theme.palette.common.white, 0.15),
-  //   '&:hover': {
-  //     backgroundColor: fade(theme.palette.common.white, 0.25),
-  //   },
-  //   marginRight: theme.spacing(2),
-  //   marginLeft: 0,
-  //   width: '100%',
-  //   [theme.breakpoints.up('sm')]: {
-  //     marginLeft: theme.spacing(3),
-  //     width: 'auto',
-  //   },
-  // },
-  // searchIcon: {
-  //   padding: theme.spacing(0, 2),
-  //   height: '100%',
-  //   position: 'absolute',
-  //   pointerEvents: 'none',
-  //   display: 'flex',
-  //   alignItems: 'center',
-  //   justifyContent: 'center',
-  // },
+
   inputRoot: {
     color: 'inherit',
   },
@@ -113,10 +90,11 @@ function PrimarySearchAppBar() {
 
 
          <ListItem> <Link to='/elements' style={work}>Work with Us</Link>  </ListItem>
-         <InstagramIcon></InstagramIcon>
-         <TwitterIcon></TwitterIcon>
-         <FacebookIcon></FacebookIcon>
-         <GitHubIcon></GitHubIcon>
+         
+         <Link style={social}><InstagramIcon></InstagramIcon></Link>
+        <Link> <TwitterIcon></TwitterIcon></Link>
+         <Link><FacebookIcon></FacebookIcon></Link>
+         <Link><GitHubIcon></GitHubIcon></Link>
          <ListItem> <Link to='/'style={about} >About Us</Link> </ListItem>
          <ListItem><Link to='/team' style={privacy}>Privacy Policy </Link>  </ListItem> 
          <ListItem><Link to='/team' style={faq}>FAQ </Link>  </ListItem> 
@@ -133,6 +111,10 @@ function PrimarySearchAppBar() {
   );
 }
 
+const social = {
+  color:"#f0f0f0",
+  margin:"50px 0 50px 0px",
+}
 const companyName ={
   color: "rgba(0,0,0,0.6)",
   textDecoration:"none",
