@@ -7,25 +7,18 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
-
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
-
 import AccountCircle from '@material-ui/icons/AccountCircle';
-
 import MoreIcon from '@material-ui/icons/MoreVert';
 import Container from '@material-ui/core/Container'
 import { ListItem, responsiveFontSizes } from '@material-ui/core';
-
 import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import GitHubIcon from '@material-ui/icons/GitHub';
-
 import { styled } from '@material-ui/styles';
 import { Visibility } from '@material-ui/icons';
-
-
 import SvgIcon from '@material-ui/core/SvgIcon';
 
 
