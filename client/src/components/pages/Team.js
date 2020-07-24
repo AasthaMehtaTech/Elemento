@@ -31,6 +31,7 @@ const Team = () => {
   var instalink = "www.google.com";
   var githublink = "www.google.com";
   var linkedinlink = "www.google.com";
+
   var profileKey = [{
     PersonName:"Akash Krishna",
     PersonRole:"Software developer",
@@ -54,7 +55,31 @@ const Team = () => {
     githublink:{githublink},
     linkedinlink:{linkedinlink},
     bio:"Second bro loves to design amazing features list and is expert at handling customer experience."
-  }
+  },
+  {
+    PersonName:"XYZ",
+    PersonRole:"Software developer",
+    PersonBio:"Hi there!",
+    PersonImg:"https://images.unsplash.com/photo-1503249023995-51b0f3778ccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=311&q=80",
+
+    fblink:{fblink},
+    instalink:{instalink},
+    githublink:{githublink},
+    linkedinlink:{linkedinlink},
+    bio:"Second bro loves to design amazing features list and is expert at handling customer experience."
+  },
+  {
+    PersonName:"XYZ",
+    PersonRole:"Software developer",
+    PersonBio:"Hi there!",
+    PersonImg:"https://images.unsplash.com/photo-1503249023995-51b0f3778ccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=311&q=80",
+
+    fblink:{fblink},
+    instalink:{instalink},
+    githublink:{githublink},
+    linkedinlink:{linkedinlink},
+    bio:"Second bro loves to design amazing features list and is expert at handling customer experience."
+  },
    
 ];
   const [spacing, setSpacing] = React.useState(8);
@@ -89,7 +114,7 @@ const Team = () => {
      <Grid container className={classes.root} spacing={8}>
         <Grid item xs={12}>
         <Grid container justify="center" spacing={spacing}>
-          {[0,1].map((value) => (
+          {[0,1,2,3].map((value) => (
             <Grid key={value} item>
               <ImageComponent 
         PersonName={profileKey[value].PersonName}
