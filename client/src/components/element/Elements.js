@@ -50,6 +50,9 @@ const Element = () => {
             />
           )):  filtered.map((element) => (
               <ElementItem
+              JSCode={element.JSCode}
+              HTMLCode={element.HTMLCode}
+              CSSCode={element.CSSCode}
                 name={element.name}
                 img={element.screenshot.data}
                 key={element._id}
