@@ -20,7 +20,7 @@ const useStyles = makeStyles({
 });
 
 
-const ElementItem = ({ name, img, code }) => {
+const ElementItem = ({ name, img, HTMLCode, CSSCode, JSCode }) => {
   const classes = useStyles();
 
   const [isOpen, setIsOpen] = useState(false);
@@ -71,7 +71,7 @@ const ElementItem = ({ name, img, code }) => {
           </Button>
         </CardActions>
       </Card>
-      <ElementModal isOpen={isOpen} close={handleClose} code={code} />
+      <ElementModal isOpen={isOpen} close={handleClose} CSSCode={CSSCode} HTMLCode = {HTMLCode} JSCode = {JSCode} />
     </div>
   );
 };
