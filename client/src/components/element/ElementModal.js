@@ -38,18 +38,19 @@ const ElementModal = (props) => {
        <div className={classes.root}>
       <Grid container spacing={3}>
         <Grid item xs={4}>
-        <JsEditor code={props.code} />
+          {console.log(props.JSCode)}
+        <JsEditor code={props.JSCode} />
         </Grid>
 
     
         <Grid item xs={4}>
-        <HTMLEditor code={props.code} />
+        <HTMLEditor code={props.HTMLCode} />
         </Grid>
 
 
         <Grid item xs={4}>
         
-      <CSSEditor code={props.code} />
+      <CSSEditor code={props.CSSCode} />
         </Grid>
         </Grid>
      

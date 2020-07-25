@@ -41,13 +41,18 @@ const Element = () => {
         {filtered === null
           ? elements.map((element) => (
             <ElementItem
-              code={element.code}
+              JSCode={element.JSCode}
+              HTMLCode={element.HTMLCode}
+              CSSCode={element.CSSCode}
               name={element.name}
               img={element.screenshot.data}
               key={element._id}
             />
           )):  filtered.map((element) => (
               <ElementItem
+              JSCode={element.JSCode}
+              HTMLCode={element.HTMLCode}
+              CSSCode={element.CSSCode}
                 name={element.name}
                 img={element.screenshot.data}
                 key={element._id}
