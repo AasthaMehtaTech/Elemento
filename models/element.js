@@ -5,7 +5,9 @@ const elementSchema = new mongoose.Schema({
     type: String,
     unique: true,
   },
-  code: String,
+  JSCode: String,
+  HTMLCode: String,
+  CSSCode: String,
   screenshot: {
     type: Buffer,
   },

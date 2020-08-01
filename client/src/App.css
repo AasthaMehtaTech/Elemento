@@ -34,3 +34,69 @@
  }
  
 
+.btn:hover{
+    background-color: salmon;
+    color:black;
+}
+
+.titleTeam{
+    color:#707070;
+     letter-spacing: 2px;
+     font-size: 4vh;
+     padding-bottom: 2vh;
+      text-align: center;
+     margin-top: 5vh;
+      
+ }
+ .paraTeam{
+     color: #707070;
+     font-size: 20px;
+     text-align: center;
+ 
+    }
+    .contentTeam{
+        padding-bottom: 10vh;
+        margin-bottom: auto;
+    }
+ .backg{
+  z-index: -1;
+  position: relative;
+  width: 100%; 
+ }
+.customSearch{
+     position: absolute;
+     top:15%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     /* background: rgba(0, 0, 0, 0.9); */
+     background-color: rgb(51, 102, 255);
+     max-width: 600px;
+     width: 100%;
+     padding:15px;
+     border-radius: 100px;
+     display: flex;
+     justify-content: space-between;
+}
+.customSearch .input{
+    width: 85%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 100px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.searchbtn{
+     background: #FF8E53;
+     width: 10%;
+     border-radius: 50px;
+     position: relative;
+     cursor: pointer;
+}
+.searchbtn .icon{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+
+}

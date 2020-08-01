@@ -11,7 +11,7 @@ const upload = multer({
     fileSize: 1024 * 1024,
   },
   fileFilter(req, file, cb) {
-    if (!file.originalname.match(/\.(jpg|jpeg|png)$/)) {
+    if (!file.originalname.match(/\.(JPG|jpeg|png)$/)) {
       return cb(new Error("Please upload an image in JPG, JPEG or PNG format"));
     } else if (file.size > 1024 * 1024) {
       return cb(new Error("Please upload a screenshot under 1 MB"));
@@ -40,7 +40,9 @@ router.post("/", upload.single("screenshot"), async (req, res) => {
   try {
     const newElement = new Element({
       name: req.body.name,
-      code: req.body.code,
+      JSCode: req.body.JSCode,
+      HTMLCode: req.body.HTMLCode,
+      CSSCode: req.body.CSSCode,
       screenshot: req.file.buffer,
     });
 
