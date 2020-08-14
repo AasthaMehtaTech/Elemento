@@ -19,12 +19,13 @@ const useStyles = makeStyles((theme) => ({
 }));
 
  function Example() {
-  const [spacing, setSpacing] = React.useState(8);
+  // const [spacing, setSpacing] = React.useState(8);
+  const [spacing] = React.useState(8);
   const classes = useStyles();
 
-  const handleChange = (event) => {
-    setSpacing(Number(event.target.value));
-  };
+  // const handleChange = (event) => {
+  //   setSpacing(Number(event.target.value));
+  // };
 
   return (
     <div className="sec-backImage">
