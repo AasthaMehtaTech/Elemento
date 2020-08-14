@@ -63,7 +63,7 @@ const Team = () => {
           <Grid container justify="center" spacing={spacing}>
             {[0,1,2,3].map((value) => (
               <Grid key={value} item>
-                <ProfileModal 
+                {/* <ProfileModal 
           PersonName={profileKey[value].PersonName}
           PersonRole={profileKey[value].PersonRole}
           PersonBio={profileKey[value].PersonBio}
@@ -73,7 +73,7 @@ const Team = () => {
           githublink={profileKey[value].githublink}
           linkedinlink={profileKey[value].linkedinlink}
           bio={profileKey[value].bio}
-          />
+          /> */}
               </Grid>
             ))}
           </Grid>
