@@ -1,48 +1,86 @@
 # Customizable_Portfolio
-This is an __*Open Source Project*__ to make available basic structure of code to everyone, <br>
-who wants to build an online portfolio to showcase their achievements &amp; strides towards making progress.
+- Customizable Portfolio is a website that aims to help users get started building their portfolio by providing a skeletal yet fully functional code.
+- This is an __*Open Source Project*__ to make available basic structure of code to everyone, <br>
+who wants to build an online portfolio to showcase their achievements &amp; strides towards making progress.<br>
 
-## Motivation
-We the coding community, esp. **student coders**, are full of enthusiasm of learning new technologies everyday<br>
-& do like to have a place where we could __*depict ourselves at professional fronts*__ full-fledgedly. <br>
-Thus merely 1 page resume can't suffice the space everything additional we might want to show. For this and much more an online portfolio would come handy to express our true potential & interests.<br>
-And thus, I proposed this project to be a __*Mentor*__ for PSoC.
+## Contributions for Portfolio Elements
+- Have HTML, CSS, JS code for the element in separate files.
+- Fill & Submit the Contribution Form (in Contribution Section of website) as instructed.
 
-## Why go for an online portfolio?
-For Building an Online Presence: 
->
-> - For Visibility to other professionals
-> - While applying for Internships/ Jobs, to share your unique aura.
-> - Leverage it showcase our coding projects or academic work in a more dynamic fashion
-> - Or just having everything at one place to get self-motivated & keep progressing at a pace.
->
-*Building a website about your brand and experience is a polished way to share your expertise with others*.
+## Contributions and Pull Requests (PRs) for Website Code
 
-### What is Customizable Portfolio?
-A website that aims to help users get started building their portfolio by providing a skeletal yet fully functional code.
+- PRs could be submitted for review for `master` branch.
+- Briefly describe the changes made, refer to the issue solved (if applicable)
+- Remember to attach the screenshot of implemented feature while making pull request.
 
-### Who will be the users?
-> - __*Non-coders or beginners:*__ To build a simple structured portfolio with a customisability in terms of component color & basic styling selection option.<br>
-> - __*Skilled Coders:*__ To have a skeletal structure to get started.
+## Steps to run the project: 
+1. `npm install`  (in Customizable_Portfolio i.e. main dir)
+2. `npm run --prefix client` (in main dir) or `npm start` (in client dir)
 
-### What's this Project for?
+## Build Setup
+Project Scripts Available (for running in main dir): 
+```
+available via `npm run-script`:
+  # server
+    nodemon app.js
+  # client 
+    npm start --prefix client
+  # clientinstall
+    npm install --prefix client
+  # dev
+    concurrently "npm run server" "npm run client"
+```
+Client Scripts Available: 
+```
+    
+# Lifecycle scripts included in client:
+  start
+    react-scripts start
+  test
+    react-scripts test
 
-This project is started as a PSoC Project. (Programming Club of UIET, Panjab University's Summer of Code Initiative) 
+# available via `npm run-script`:
+  build
+    react-scripts build
+  eject
+    react-scripts eject
+```
 
-### Who's going to build it?
+## Design
 
-Open Source Enthusiasts willing to contribute through their skills while upskilling.
+- Home Page : [Web](https://github.com/AasthaGithub/TestGit/blob/master/Website%20Home%20Page%20Screenshot.JPG)
 
-## How will it be built?
+## Project Structure
 
-- Selection of technologies to be used will be done dynamically as per skill sets of the team & demand of the project 
-- Suggested technologies include : **MERN Stack** or **Python- Flask/ Django** along with basic front-end tech: HTML, CSS, JS
+    .
+    ├── client                  # All Dev files
+    |      └── src              # Source files                
+    └── ...
 
-## Want to contribute making this project more awesome?
+## Src Structure
 
-- [Apply here:](http://pclubsummerofcode.in/)
-- [How to apply: ](https://youtu.be/929VTAFi9EI)
-- [Proposal Format:](https://drive.google.com/file/d/1KxZV0PYFql7nFsjjadY-x7vOwcKHgmwz/view?usp=drivesdk)
+    .
+    ├── ...
+    ├── src
+    │   ├── ...
+    │   ├── components             # Code for the website
+    |   |         └── element
+    |   |         └── layout
+    |   |                └── Navbar.js     # Website Navbar
+    |   |                └── Footer.js     # Website Footer
+    |   |                └── ...
+    |   |         └── pages      
+    |   |                └── Element.js
+    |   |                └── Home.js
+    |   |                └── Team.js
+    |   |         └── ...
+    |   ├── App.js            # starting point
+    │   └── ...
+    └── ...
 
 
+## Contact
+For any query or build issues feel free to reach:<br>
+[Aastha](https://github.com/AasthaGithub/) at aasthamehta2704@gmail.com<br>
+[Sarthak](https://github.com/sarthakkundra/) at sarthakkundra21@gmail.com 
  
