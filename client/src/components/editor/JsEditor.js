@@ -8,10 +8,10 @@ import 'codemirror/addon/hint/show-hint.css';
 
 
 
-require('codemirror/mode/javascript/javascript.js');
-require('codemirror/addon/lint/javascript-lint');
-require('codemirror/addon/lint/lint.js');
-require('codemirror/addon/hint/javascript-hint');
+import 'codemirror/mode/javascript/javascript.js';
+import 'codemirror/addon/lint/javascript-lint';
+import 'codemirror/addon/lint/lint.js';
+import 'codemirror/addon/hint/javascript-hint';
 
 
 const JsEditor = ({code}) => {
@@ -22,7 +22,6 @@ const JsEditor = ({code}) => {
         value={code}
         options={{
           gutters: ["CodeMirror-lint-markers"],
-          lint: true,
           mode: "javascript",
           theme: "material",
           lineNumbers: true,
