@@ -6,7 +6,7 @@ import {profileKey} from '../layout/TeamDetails';
 import ScrollTopButton from '../layout/ScrollTopButton';
 import { Container } from '@material-ui/core';
 import backimage  from '../../img/Blueback.svg'
-// import ProfileModal from "../layout/ProfileModal";
+import ProfileModal from "../layout/profileModal";
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
@@ -62,7 +62,7 @@ const Team = () => {
           <Grid container justify="center" spacing={spacing}>
             {[0,1,2,3].map((value) => (
               <Grid key={value} item>
-                {/* <ProfileModal 
+                <ProfileModal 
           PersonName={profileKey[value].PersonName}
           PersonRole={profileKey[value].PersonRole}
           PersonBio={profileKey[value].PersonBio}
@@ -72,7 +72,7 @@ const Team = () => {
           githublink={profileKey[value].githublink}
           linkedinlink={profileKey[value].linkedinlink}
           bio={profileKey[value].bio}
-          /> */}
+          />
               </Grid>
             ))}
           </Grid>
