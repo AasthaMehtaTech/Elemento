@@ -57,15 +57,7 @@ const useStyles = makeStyles((theme) => ({
 function Footer() {
   const classes = useStyles();
   
-  // const [anchorEl, setAnchorEl] = React.useState(null);
-  // const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
-
-  // const isMenuOpen = Boolean(anchorEl);
-  // const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
   
-  // const mobileMenuId = 'primary-search-account-menu-mobile';
-  
-
   
 
   return (
@@ -83,7 +75,7 @@ function Footer() {
 
          <ListItem> <Link to='/elements' style={work}>Work with Us</Link>  </ListItem>
          
-         <Link style={social}><InstagramIcon></InstagramIcon></Link>
+         <Link style={social} ><InstagramIcon></InstagramIcon></Link>
         <Link style={social}> <TwitterIcon></TwitterIcon></Link>
          <Link style={social}><FacebookIcon></FacebookIcon></Link>
          <Link style={social}><GitHubIcon></GitHubIcon></Link>
@@ -218,7 +210,8 @@ const tandc = {
 
 const appBar =
 {
-  backgroundColor: "Gray" 
+  backgroundColor: "Gray" ,
+  marginTop:"3%",
 }
 
 export default  Footer;
