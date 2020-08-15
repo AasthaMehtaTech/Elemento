@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import '../../App.css'
 import Paper from '@material-ui/core/Paper';
 import { Container } from '@material-ui/core';
-import photo from '../../img/AK.jpg'
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
   //   setSpacing(Number(event.target.value));
   // };
   const arr1 = [{
-    id:photo,
+    id:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSuYTDbYKg_8fBE5Y8N6ryR9QgM92ePXAqBwg&usqp=CAU",
     alt:"Profile pic"
   },{
     id:"https://mdbootstrap.com/wp-content/uploads/2015/08/navbar-fb.jpg",
@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     id:"https://mdbootstrap.com/wp-content/uploads/2015/08/navbar-fb.jpg",
     alt:"Profile pic"
   },{
-    id:photo,
+    id:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSuYTDbYKg_8fBE5Y8N6ryR9QgM92ePXAqBwg&usqp=CAU",
     alt:"Profile pic"
   }
   ]
@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
     alt:"Profile pic"
   },{
     
-    id:photo,
+    id:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSuYTDbYKg_8fBE5Y8N6ryR9QgM92ePXAqBwg&usqp=CAU",
     alt:"Profile pic"
   },{
     id:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGtcDYNlfc8JHSe3b5qGFBM0bvmuu7WNkt1w&usqp=CAU",
@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
             <Grid key={value} item>
               <Paper className={classes.paper}>
 
-              <img src={value.id} alt={value.alt} style={{width: '100%', height: '100%'}}/>
+              <img src={value.id} alt={value.alt} className="exampleImage" />
               </Paper>
             </Grid>
           ))}
@@ -88,7 +88,7 @@ const useStyles = makeStyles((theme) => ({
           {arr2.map((value) => (
             <Grid key={value} item>
               <Paper className={classes.paper}>
-              <img src={value.id} alt={value.alt} style={{width: '100%', height: '100%'}}/>
+              <img src={value.id} alt={value.alt} className="exampleImage" />
               </Paper>
             </Grid>
           ))}
@@ -100,7 +100,7 @@ const useStyles = makeStyles((theme) => ({
           {arr3.map((value) => (
             <Grid key={value} item>
               <Paper className={classes.paper}>
-              <img src={value.id} alt={value.alt} style={{width: '100%', height: '100%'}}/>
+              <img src={value.id} alt={value.alt} className="exampleImage" />
               </Paper>
             </Grid>
           ))}
