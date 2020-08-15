@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import '../../App.css'
 import Paper from '@material-ui/core/Paper';
 import { Container } from '@material-ui/core';
-
+import photo from '../../img/AK.jpg'
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
