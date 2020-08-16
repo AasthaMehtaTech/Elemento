@@ -7,6 +7,7 @@ const ElementView = ({ html, css, js }) => {
   return (
     <div>
       <iframe
+        title='Element View'
         style={{
           width: "100%",
           height: "200px",

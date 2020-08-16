@@ -26,8 +26,7 @@ const JsEditor = ({code}) => {
           theme: "material",
           lineNumbers: true,
           lineWrapping: true,
-          readOnly: true,
-         
+          readOnly: true, 
         }}
        
       />
