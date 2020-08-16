@@ -17,7 +17,7 @@ const ElementState = (props) => {
     elements: null,
     loading: false,
     element: null,
-    filtered: null
+    filtered: null,
   };
 
 
