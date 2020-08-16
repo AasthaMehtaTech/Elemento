@@ -1,25 +1,16 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 import '../../App.css'
-import { fade, makeStyles } from '@material-ui/core/styles';
+import {makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import InputBase from '@material-ui/core/InputBase';
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-import MoreIcon from '@material-ui/icons/MoreVert';
 import Container from '@material-ui/core/Container'
-import { ListItem, responsiveFontSizes } from '@material-ui/core';
+import { ListItem} from '@material-ui/core';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import { styled } from '@material-ui/styles';
-import { Visibility } from '@material-ui/icons';
-import SvgIcon from '@material-ui/core/SvgIcon';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -63,23 +54,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function PrimarySearchAppBar() {
+function Footer() {
   const classes = useStyles();
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
-
-  const isMenuOpen = Boolean(anchorEl);
-  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
   
-
-  const mobileMenuId = 'primary-search-account-menu-mobile';
+  
   
 
   return (
     <div className={classes.grow}>
       <AppBar position="static" style={appBar}>
-         <Container fixed>
+         <Container >
         <Toolbar>
           
           <div className={classes.grow} />
@@ -91,10 +75,10 @@ function PrimarySearchAppBar() {
 
          <ListItem> <Link to='/elements' style={work}>Work with Us</Link>  </ListItem>
          
-         <Link style={social}><InstagramIcon></InstagramIcon></Link>
-        <Link> <TwitterIcon></TwitterIcon></Link>
-         <Link><FacebookIcon></FacebookIcon></Link>
-         <Link><GitHubIcon></GitHubIcon></Link>
+         <Link style={social} ><InstagramIcon></InstagramIcon></Link>
+        <Link style={social}> <TwitterIcon></TwitterIcon></Link>
+         <Link style={social}><FacebookIcon></FacebookIcon></Link>
+         <Link style={social}><GitHubIcon></GitHubIcon></Link>
          <ListItem> <Link to='/'style={about} >About Us</Link> </ListItem>
          <ListItem><Link to='/team' style={privacy}>Privacy Policy </Link>  </ListItem> 
          <ListItem><Link to='/team' style={faq}>FAQ </Link>  </ListItem> 
@@ -114,15 +98,6 @@ function PrimarySearchAppBar() {
 const social = {
   color:"#f0f0f0",
   margin:"50px 0 50px 0px",
-}
-const companyName ={
-  color: "rgba(0,0,0,0.6)",
-  textDecoration:"none",
-  fontWeight:"bold",
-  fontSize: "26px",
-  letterSpacing:"1px",
-  // textTransform: "uppercase" ,
-  
 }
 
 const get = {
@@ -235,7 +210,8 @@ const tandc = {
 
 const appBar =
 {
-  backgroundColor: "Gray" 
+  backgroundColor: "Gray" ,
+  marginTop:"3%",
 }
 
-export default  PrimarySearchAppBar
+export default  Footer;
