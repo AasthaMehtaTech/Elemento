@@ -14,37 +14,9 @@ who wants to build an online portfolio to showcase their achievements &amp; stri
 - Remember to attach the screenshot of implemented feature while making pull request.
 
 ## Steps to run the project: 
-1. `npm install`  (in Customizable_Portfolio i.e. main dir)
-2. `npm run --prefix client` (in main dir) or `npm start` (in client dir)
-
-## Build Setup
-Project Scripts Available (for running in main dir): 
-```
-available via `npm run-script`:
-  # server
-    nodemon app.js
-  # client 
-    npm start --prefix client
-  # clientinstall
-    npm install --prefix client
-  # dev
-    concurrently "npm run server" "npm run client"
-```
-Client Scripts Available: 
-```
-    
-# Lifecycle scripts included in client:
-  start
-    react-scripts start
-  test
-    react-scripts test
-
-# available via `npm run-script`:
-  build
-    react-scripts build
-  eject
-    react-scripts eject
-```
+1. `npm install`  (in Customizable_Portfolio i.e. root dir)
+2. Make a `.env` file in the root dir, defining following environment variables: `MONGO_URI`, `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET`
+3. `npm run dev` (to concurrently run client & backend server)
 
 ## Design
 
