@@ -22,7 +22,13 @@ const Contribute = () => {
 
   const onChange = (e) => {
     {
-      console.log(e)
+      // empty string final code everytime better to append directly
+      var finalCode = "";
+      e.display.view.forEach(code =>{
+        finalCode.concat(code.line.text, "\n")
+      } )
+      setJsCode(finalCode);
+      console.log(finalCode)
     }
   };
 
