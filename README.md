@@ -24,6 +24,7 @@ Customizable Portfolio is a website that aims to help people make a fully functi
 This project is part of **PSoC** (Program Summer of Code) organized by UIET Chandigarh. It is a 2 month long open source competition to help people get started with open source with the help of experienced mentors.
 
 
+
 ### Tech Stack :star:
 
 * [React Js](https://reactjs.org/)

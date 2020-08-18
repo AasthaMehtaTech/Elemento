@@ -19,12 +19,50 @@ const useStyles = makeStyles((theme) => ({
 }));
 
  function Example() {
-  const [spacing, setSpacing] = React.useState(8);
+  // const [spacing, setSpacing] = React.useState(8);
+  const [spacing] = React.useState(8);
   const classes = useStyles();
 
-  const handleChange = (event) => {
-    setSpacing(Number(event.target.value));
-  };
+  // const handleChange = (event) => {
+  //   setSpacing(Number(event.target.value));
+  // };
+  const arr1 = [{
+    id:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSuYTDbYKg_8fBE5Y8N6ryR9QgM92ePXAqBwg&usqp=CAU",
+    alt:"Profile pic"
+  },{
+    id:"https://mdbootstrap.com/wp-content/uploads/2015/08/navbar-fb.jpg",
+    alt:"Profile pic"
+  },{
+    id:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGtcDYNlfc8JHSe3b5qGFBM0bvmuu7WNkt1w&usqp=CAU",
+    alt:"Profile pic"
+  }
+  ]
+  const arr2 = [{
+
+    id:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGtcDYNlfc8JHSe3b5qGFBM0bvmuu7WNkt1w&usqp=CAU",
+    alt:"Profile pic"
+  },{
+    
+    id:"https://mdbootstrap.com/wp-content/uploads/2015/08/navbar-fb.jpg",
+    alt:"Profile pic"
+  },{
+    id:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSuYTDbYKg_8fBE5Y8N6ryR9QgM92ePXAqBwg&usqp=CAU",
+    alt:"Profile pic"
+  }
+  ]
+  const arr3 = [{
+
+    id:"https://mdbootstrap.com/wp-content/uploads/2015/08/navbar-fb.jpg",
+    alt:"Profile pic"
+  },{
+    
+    id:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSuYTDbYKg_8fBE5Y8N6ryR9QgM92ePXAqBwg&usqp=CAU",
+    alt:"Profile pic"
+  },{
+    id:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGtcDYNlfc8JHSe3b5qGFBM0bvmuu7WNkt1w&usqp=CAU",
+    alt:"Profile pic"
+  }
+  ]
 
   return (
     <div className="sec-backImage">
@@ -35,18 +73,23 @@ const useStyles = makeStyles((theme) => ({
       <Grid container className={classes.root} spacing={8}>
         <Grid item xs={12}>
         <Grid container justify="center" spacing={spacing}>
-          {[0, 1, 2].map((value) => (
+          {arr1.map((value) => (
             <Grid key={value} item>
-              <Paper className={classes.paper}></Paper>
+              <Paper className={classes.paper}>
+
+              <img src={value.id} alt={value.alt} className="exampleImage" />
+              </Paper>
             </Grid>
           ))}
         </Grid>
       </Grid>
       <Grid item xs={12}>
         <Grid container justify="center" spacing={spacing}>
-          {[0, 1, 2].map((value) => (
+          {arr2.map((value) => (
             <Grid key={value} item>
-              <Paper className={classes.paper}></Paper>
+              <Paper className={classes.paper}>
+              <img src={value.id} alt={value.alt} className="exampleImage" />
+              </Paper>
             </Grid>
           ))}
         </Grid>
@@ -54,9 +97,11 @@ const useStyles = makeStyles((theme) => ({
 
       <Grid item xs={12}>
         <Grid container justify="center" spacing={spacing}>
-          {[0, 1, 2].map((value) => (
+          {arr3.map((value) => (
             <Grid key={value} item>
-              <Paper className={classes.paper}></Paper>
+              <Paper className={classes.paper}>
+              <img src={value.id} alt={value.alt} className="exampleImage" />
+              </Paper>
             </Grid>
           ))}
         </Grid>

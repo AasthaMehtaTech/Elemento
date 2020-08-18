@@ -20,11 +20,8 @@ const SearchFilter = () => {
   };
   return (
     <form className="customSearch">
-      <input type={text} className="input" type='text' placeholder="Search" onChange={onChange}/>
-      <div className="searchbtn">
-      <FaSearch className="icon"> </FaSearch>
-      </div>
-    </form>
+      <input type={text} className="input" type='text' placeholder="Search Navbar,Footer etc." onChange={onChange}/>
+        </form>
   );
 };
 
