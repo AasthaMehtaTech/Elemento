@@ -31,7 +31,7 @@ router.get("/", async (req, res) => {
 // Not working
 router.get("/:name", async (req, res) => {
   var elements = [];
-  elements = await Element.find({ name: req.params.name });
+  elements = await Element.find({ name: {$regex: req.params.name} });
   res.send(elements);
 });
 
