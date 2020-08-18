@@ -9,16 +9,16 @@
 * [Getting Started](#getting-started)
   * [Installation](#installation)
 * [Usage](#usage)
-* [Roadmap](#roadmap)
 * [Contributing](#contributing)
-* [License](#license)
 * [Design](#design)
+* [Future Plans](#future-plans)
 * [Contact](#contact)
+* [License](#license)
 
 
 ## About The Project
 
-[![Customizable Portfolio Screen Shot][product-screenshot]](https://github.com/AasthaGithub/TestGit/blob/master/Website%20Home%20Page%20Screenshot.JPG)
+![Customizable Portfolio Screenshot](https://github.com/AasthaGithub/TestGit/blob/master/Website%20Home%20Page%20Screenshot.JPG)
 
 Customizable Portfolio is a website that aims to help people make a fully functional static website in a short amount of time without relying on web developers and that too with very little prior programming experience.
 
@@ -103,10 +103,17 @@ Being a project of an open source competition, we believe in the power of PRs as
 Refer to this adobe XD high fidelity prototype for the UI.
 - Home Page : [XD-design](https://xd.adobe.com/view/eb226106-0db5-4634-90f5-75cd939550a6-be71/)
 
-
+## Future Plans
+1. Add a website preview mode.
+2. Dynamically feature the latest element contributor on the teams page.
+3. Add like feature for elements.
+4. Show most liked elements on home page.
 
 ## Contact
 For any query or build issues feel free to reach out the maintainers:<br>
 [Aastha](https://github.com/AasthaGithub/) at aasthamehta2704@gmail.com<br>
 [Sarthak](https://github.com/sarthakkundra/) at sarthakkundra21@gmail.com 
  
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
