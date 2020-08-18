@@ -16,13 +16,19 @@ const useStyles = makeStyles((theme) => ({
 const Contribute = () => {
   const classes = useStyles();
 
-  const [jsCode, setJsCode] = useState("");
+  const [jsCode, setJsCode] = useState("//Write your JavaScript here :)");
   const [htmlCode, setHtmlCode] = useState("");
   const [cssCode, setCSSCode] = useState("");
 
-  const onChange = () => {
+  const onChange = (e) => {
     {
-      console.log("Js change fired");
+      // empty string final code everytime better to append directly
+      var finalCode = "";
+      e.display.view.forEach(code =>{
+        finalCode.concat(code.line.text, "\n")
+      } )
+      setJsCode(finalCode);
+      console.log(finalCode)
     }
   };
 
@@ -31,7 +37,7 @@ const Contribute = () => {
       <Navbar />
       <Grid container spacing={10}>
         <Grid item xs={4}>
-          <JsEditor onChange={onChange} />
+          <JsEditor onChange={onChange} js={jsCode} />
         </Grid>
         <Grid item xs={4}>
           <HTMLEditor />
