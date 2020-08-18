@@ -6,7 +6,7 @@ import {profileKey} from '../layout/TeamDetails';
 import ScrollTopButton from '../layout/ScrollTopButton';
 import { Container } from '@material-ui/core';
 import backimage  from '../../img/Blueback.svg'
-import ProfileModal from "../layout/ProfileModal";
+import ProfileModal from "../layout/profileModal";
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
@@ -55,7 +55,7 @@ const Team = () => {
         portfolio or both.
         A set of small, responsive CSS modules that you can use in every web project,
         portfolio or both.
-      </p>     
+      </p>      
     </Container> 
     <div className="teamSet">
       <Grid container className={classes.root} spacing={8}>
