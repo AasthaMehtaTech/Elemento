@@ -1,22 +1,21 @@
 # Customizable_Portfolio
 
-
 ## Table of Contents
 
-* [About the Project](#about-the-project)
-  * [Tech Stack](#tech-stack)
-* [Project Structure](#project-structure)
-* [Getting Started](#getting-started)
+* [About the Project](#about-the-project-heart)
+  * [Tech Stack](#tech-stack-star)
+* [Project Structure](#project-structure-blue_book)
+* [Getting Started](#getting-started-zap)
   * [Installation](#installation)
 * [Usage](#usage)
-* [Contributing](#contributing)
-* [Design](#design)
+* [Contributing](#contributing-tada)
+* [Design](#design-performing_arts)
 * [Future Plans](#future-plans)
-* [Contact](#contact)
+* [Contact](#contact-email)
 * [License](#license)
 
 
-## About The Project
+## About The Project :heart:
 
 ![Customizable Portfolio Screenshot](https://github.com/AasthaGithub/TestGit/blob/master/Website%20Home%20Page%20Screenshot.JPG)
 
@@ -25,14 +24,14 @@ Customizable Portfolio is a website that aims to help people make a fully functi
 This project is part of **PSoC** (Program Summer of Code) organized by UIET Chandigarh. It is a 2 month long open source competition to help people get started with open source with the help of experienced mentors.
 
 
-### Tech Stack
+### Tech Stack :star:
 
 * [React Js](https://reactjs.org/)
 * [Node Js](https://nodejs.org/en/)
 * [Materia-UI](https://material-ui.com/)
 
 
-## Project Structure
+## Project Structure :blue_book:
 
     .
     ├── client                  # All Dev files
@@ -61,7 +60,7 @@ This project is part of **PSoC** (Program Summer of Code) organized by UIET Chan
     └── ...
 
 
-## Getting Started
+## Getting Started :zap:
 
 To get a local copy up and running follow these simple steps.
 
@@ -88,7 +87,7 @@ npm run dev
 
 Under Construction :)
 
-## Contributing
+## Contributing :tada:
 
 Being a project of an open source competition, we believe in the power of PRs as that's what makes any project awesome and inspires us to create and learn. Any contributions you make are **greatly appreciated**.
 
@@ -99,8 +98,8 @@ Being a project of an open source competition, we believe in the power of PRs as
 5. Open a Pull Request
 
 
-## Design
-Refer to this adobe XD high fidelity prototype for the UI.
+## Design :performing_arts:
+Refer to this Adobe XD high fidelity prototype for the UI.
 - Home Page : [XD-design](https://xd.adobe.com/view/eb226106-0db5-4634-90f5-75cd939550a6-be71/)
 
 ## Future Plans
@@ -109,7 +108,7 @@ Refer to this adobe XD high fidelity prototype for the UI.
 3. Add like feature for elements.
 4. Show most liked elements on home page.
 
-## Contact
+## Contact :email:
 For any query or build issues feel free to reach out the maintainers:<br>
 [Aastha](https://github.com/AasthaGithub/) at aasthamehta2704@gmail.com<br>
 [Sarthak](https://github.com/sarthakkundra/) at sarthakkundra21@gmail.com 
@@ -117,3 +116,4 @@ For any query or build issues feel free to reach out the maintainers:<br>
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
