@@ -11,14 +11,16 @@ import Typography from "@material-ui/core/Typography";
 import CodeIcon from "@material-ui/icons/Code";
 import GetAppRoundedIcon from "@material-ui/icons/GetAppRounded";
 
-import ElementModal from './ElementModal';
+import ElementModal from "./ElementModal";
+
+import completeScript from "../../utils/completeScript";
+import downloadCode from "../../utils/downloadCode";
 
 const useStyles = makeStyles({
   root: {
     maxWidth: 300,
   },
 });
-
 
 const ElementItem = ({ name, img, HTMLCode, CSSCode, JSCode }) => {
   const classes = useStyles();
@@ -27,11 +29,15 @@ const ElementItem = ({ name, img, HTMLCode, CSSCode, JSCode }) => {
 
   const handleOpen = () => {
     setIsOpen(true);
-  }
-  
+  };
+
   const handleClose = () => {
     setIsOpen(false);
-  }
+  };
+
+ const download= () => {
+  downloadCode(HTMLCode, CSSCode, JSCode);
+ }
 
   return (
     <div style={elementStyle}>
@@ -55,6 +61,7 @@ const ElementItem = ({ name, img, HTMLCode, CSSCode, JSCode }) => {
             color='seconday'
             variant='outlined'
             startIcon={<GetAppRoundedIcon />}
+            onClick={download}
           >
             Download
           </Button>
@@ -71,7 +78,13 @@ const ElementItem = ({ name, img, HTMLCode, CSSCode, JSCode }) => {
           </Button>
         </CardActions>
       </Card>
-      <ElementModal isOpen={isOpen} close={handleClose} CSSCode={CSSCode} HTMLCode = {HTMLCode} JSCode = {JSCode} />
+      <ElementModal
+        isOpen={isOpen}
+        close={handleClose}
+        CSSCode={CSSCode}
+        HTMLCode={HTMLCode}
+        JSCode={JSCode}
+      />
     </div>
   );
 };
