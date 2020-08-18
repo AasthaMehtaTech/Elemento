@@ -15,7 +15,6 @@
 * [License](#license)
 
 
-
 ## About The Project :heart:
 
 ![Customizable Portfolio Screenshot](https://github.com/AasthaGithub/TestGit/blob/master/Website%20Home%20Page%20Screenshot.JPG)
