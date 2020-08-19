@@ -1,6 +1,6 @@
 import React, { useContext, useRef, useEffect } from "react";
 import ElementContext from "../../context/element/elementContext";
-import {FaSearch} from "react-icons/fa";
+
 const SearchFilter = () => {
   const elementContext = useContext(ElementContext);
   const text = useRef("");

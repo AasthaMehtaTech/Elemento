@@ -64,7 +64,6 @@ const Home = () => {
 const btnStyle = {
   borderRadius: '6px',
   border: '1px',
-  padding: "5px 9px",
   marginLeft: "3vh",
   height: '48px',
   padding: "0 30px",
