@@ -6,7 +6,7 @@ import {profileKey} from '../layout/TeamDetails';
 import ScrollTopButton from '../layout/ScrollTopButton';
 import { Container } from '@material-ui/core';
 // import backimage  from '../../img/Blueback.svg'
-import ProfileModal from "../layout/profileModal";
+import ProfileModal from "../layout/ProfileModal";
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 

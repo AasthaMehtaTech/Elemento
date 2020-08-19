@@ -1,28 +1,37 @@
 # Customizable_Portfolio
-- Customizable Portfolio is a website that aims to help users get started building their portfolio by providing a skeletal yet fully functional code.
-- This is an __*Open Source Project*__ to make available basic structure of code to everyone, <br>
-who wants to build an online portfolio to showcase their achievements &amp; strides towards making progress.<br>
 
-## Contributions for Portfolio Elements
-- Have HTML, CSS, JS code for the element in separate files.
-- Fill & Submit the Contribution Form (in Contribution Section of website) as instructed.
+## Table of Contents
 
-## Contributions and Pull Requests (PRs) for Website Code
+* [About the Project](#about-the-project-heart)
+  * [Tech Stack](#tech-stack-star)
+* [Project Structure](#project-structure-blue_book)
+* [Getting Started](#getting-started-zap)
+  * [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing-tada)
+* [Design](#design-performing_arts)
+* [Future Plans](#future-plans)
+* [Contact](#contact-email)
+* [License](#license)
 
-- PRs could be submitted for review for `master` branch.
-- Briefly describe the changes made, refer to the issue solved (if applicable)
-- Remember to attach the screenshot of implemented feature while making pull request.
 
-## Steps to run the project: 
-1. `npm install`  (in Customizable_Portfolio i.e. root dir)
-2. Make a `.env` file in the root dir, defining following environment variables: `MONGO_URI`, `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET`
-3. `npm run dev` (to concurrently run client & backend server)
+## About The Project :heart:
 
-## Design
+![Customizable Portfolio Screenshot](https://github.com/AasthaGithub/TestGit/blob/master/Website%20Home%20Page%20Screenshot.JPG)
 
-- Home Page : [Web](https://github.com/AasthaGithub/TestGit/blob/master/Website%20Home%20Page%20Screenshot.JPG)
+Customizable Portfolio is a website that aims to help people make a fully functional static website in a short amount of time without relying on web developers and that too with very little prior programming experience.
 
-## Project Structure
+This project is part of **PSoC** (Program Summer of Code) organized by UIET Chandigarh. It is a 2 month long open source competition to help people get started with open source with the help of experienced mentors.
+
+
+### Tech Stack :star:
+
+* [React Js](https://reactjs.org/)
+* [Node Js](https://nodejs.org/en/)
+* [Materia-UI](https://material-ui.com/)
+
+
+## Project Structure :blue_book:
 
     .
     ├── client                  # All Dev files
@@ -51,8 +60,60 @@ who wants to build an online portfolio to showcase their achievements &amp; stri
     └── ...
 
 
-## Contact
-For any query or build issues feel free to reach:<br>
+## Getting Started :zap:
+
+To get a local copy up and running follow these simple steps.
+
+
+### Installation
+ 
+1. Clone the repo
+```sh
+git clone https://github.com/github_username/Customizable_Portfolio.git
+```
+2. Install NPM packages
+```sh
+npm install
+```
+3. Setup ENV variables <br>
+  (i) Make a `.env` file in the root directory. <br>
+  (ii) Create the following environment variables: `MONGO_URI`, `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET`. <br>
+  (iii) Generate the environment variables by going to the respective websites.
+4. Start the development server.
+```sh
+npm run dev
+```
+## Usage
+
+Under Construction :)
+
+## Contributing :tada:
+
+Being a project of an open source competition, we believe in the power of PRs as that's what makes any project awesome and inspires us to create and learn. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
+## Design :performing_arts:
+Refer to this Adobe XD high fidelity prototype for the UI.
+- Home Page : [XD-design](https://xd.adobe.com/view/eb226106-0db5-4634-90f5-75cd939550a6-be71/)
+
+## Future Plans
+1. Add a website preview mode.
+2. Dynamically feature the latest element contributor on the teams page.
+3. Add like feature for elements.
+4. Show most liked elements on home page.
+
+## Contact :email:
+For any query or build issues feel free to reach out the maintainers:<br>
 [Aastha](https://github.com/AasthaGithub/) at aasthamehta2704@gmail.com<br>
 [Sarthak](https://github.com/sarthakkundra/) at sarthakkundra21@gmail.com 
  
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
