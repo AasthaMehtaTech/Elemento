@@ -15,7 +15,7 @@ import {JSHINT} from 'jshint';
 window.JSHINT = JSHINT;
 
 
-const HTMLEditor = () => {
+const HTMLEditor = ({onChange}) => {
   return (
     <div>
         <h1>HTML</h1>
@@ -29,7 +29,7 @@ const HTMLEditor = () => {
           lineNumbers: true,
           lineWrapping: true,
         }}
-       
+       onChange={onChange}
       />
     </div>
   );
