@@ -15,7 +15,7 @@ import 'codemirror/addon/hint/css-hint';
 
 
 
-const CSSEditor = () => {
+const CSSEditor = ({onChange}) => {
   return (
     <div>
         <h1>CSS</h1>
@@ -23,15 +23,12 @@ const CSSEditor = () => {
         value='Write your CSS here :)'
         options={{
           gutters: ["CodeMirror-lint-markers"],
-          lint: true,
           mode: "css",
           theme: "material",
           lineNumbers: true,
           lineWrapping: true,
-          // lint: true,
-         
         }}
-       
+       onChange = {onChange}
       />
     </div>
   );
