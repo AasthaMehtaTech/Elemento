@@ -20,7 +20,7 @@ const SearchFilter = () => {
   };
   return (
     <form className="customSearch">
-      <input type={text} className="input" type='text' placeholder="Search Navbar,Footer etc." onChange={onChange}/>
+      <input type={text} className="input"  placeholder="Search Navbar,Footer etc." onChange={onChange}/>
         </form>
   );
 };

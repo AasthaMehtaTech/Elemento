@@ -5,13 +5,9 @@ import Navbar from '../layout/Navbar';
 import {profileKey} from '../layout/TeamDetails';
 import ScrollTopButton from '../layout/ScrollTopButton';
 import { Container } from '@material-ui/core';
-// import backimage  from '../../img/Blueback.svg'
 import ProfileModal from "../layout/ProfileModal";
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-
-
-
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -28,20 +24,11 @@ const useStyles = makeStyles((theme) => ({
 
 const Team = () => {
 
-  // const [spacing, setSpacing] = React.useState(8);
   const [spacing] = React.useState(8);
   const classes = useStyles();
-  // const handleChange = (event) => {
-  //   setSpacing(Number(event.target.value));
-  // };
-
-  // const backgg = {
-  //     backgroundImage: `url(require("../../img/BlueBlack.svg"))`,
-  //     height: '100%',
-  //     width:'100%',  
-  // }
+ 
   return (
-      
+ 
   <div className="backTeam" >
   <div className="backgg">
     <Navbar />
