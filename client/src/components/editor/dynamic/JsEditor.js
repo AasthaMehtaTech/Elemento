@@ -16,12 +16,12 @@ import 'codemirror/addon/hint/javascript-hint';
 import { JSHINT } from 'jshint';
 window.JSHINT = JSHINT;
 
-const JsEditor = ({onChange, js}) => {
+const JsEditor = ({onChange}) => {
   return (
     <div>
       <h1> JavaScript </h1>
       <CodeMirror
-        value={js}
+        value='//Write your JavaScript here :)'
         options={{
           gutters: ["CodeMirror-lint-markers"],
           mode: "javascript",

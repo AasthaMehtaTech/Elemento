@@ -155,7 +155,7 @@ function PrimarySearchAppBar() {
               </ListItem>
               <ListItem>
                 {" "}
-                <Link to='/' style={customStyle}>
+                <Link to='/contribute' style={customStyle}>
                   Contribute
                 </Link>{" "}
               </ListItem>
