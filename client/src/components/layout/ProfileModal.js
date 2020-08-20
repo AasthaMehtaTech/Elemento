@@ -1,7 +1,7 @@
 import React from "react";
-import { Container } from "@material-ui/core";
+// import { Container } from "@material-ui/core";
 // import "./modal.css";
-import { makeStyles } from '@material-ui/core/styles';
+// import { makeStyles } from '@material-ui/core/styles';
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import InstagramIcon from "@material-ui/icons/Instagram";

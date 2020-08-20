@@ -19,13 +19,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
  function Example() {
-  // const [spacing, setSpacing] = React.useState(8);
   const [spacing] = React.useState(8);
   const classes = useStyles();
 
-  // const handleChange = (event) => {
-  //   setSpacing(Number(event.target.value));
-  // };
   const arr1 = [{
     id:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSuYTDbYKg_8fBE5Y8N6ryR9QgM92ePXAqBwg&usqp=CAU",
     alt:"Profile pic"

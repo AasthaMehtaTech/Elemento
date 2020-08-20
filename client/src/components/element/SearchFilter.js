@@ -1,6 +1,6 @@
 import React, { useContext, useRef, useEffect } from "react";
 import ElementContext from "../../context/element/elementContext";
-import {FaSearch} from "react-icons/fa";
+
 const SearchFilter = () => {
   const elementContext = useContext(ElementContext);
   const text = useRef("");
@@ -20,7 +20,7 @@ const SearchFilter = () => {
   };
   return (
     <form className="customSearch">
-      <input type={text} className="input" type='text' placeholder="Search Navbar,Footer etc." onChange={onChange}/>
+      <input type={text} className="input"  placeholder="Search Navbar,Footer etc." onChange={onChange}/>
         </form>
   );
 };
