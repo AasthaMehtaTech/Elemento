@@ -41,14 +41,16 @@ const useStyles = makeStyles((theme) => ({
   },
   sectionDesktop: {
     display: 'none',
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up('sm')]: {
       display: 'flex',
+      
     },
   },
   sectionMobile: {
     display: 'flex',
-    [theme.breakpoints.up('md')]: {
-      display: 'none',
+    [theme.breakpoints.down('sm')]: {
+      display: 'grid',
+      margin:'auto',
     },
   },
 }));
@@ -65,26 +67,32 @@ function Footer() {
       <AppBar position="static" style={appBar}>
          <Container >
         <Toolbar>
-          
-          <div className={classes.grow} />
+        
           <div className={classes.sectionDesktop}>
-            
-         <ListItem> <Link to='/'style={get} >Get Started</Link> </ListItem>
-         <ListItem><Link to='/team' style={connect}>Connect with Us</Link>  </ListItem> 
-
-
-         <ListItem> <Link to='/elements' style={work}>Work with Us</Link>  </ListItem>
-         
-         <Link style={social} ><InstagramIcon></InstagramIcon></Link>
-        <Link style={social}> <TwitterIcon></TwitterIcon></Link>
-         <Link style={social}><FacebookIcon></FacebookIcon></Link>
-         <Link style={social}><GitHubIcon></GitHubIcon></Link>
-         <ListItem> <Link to='/'style={about} >About Us</Link> </ListItem>
-         <ListItem><Link to='/team' style={privacy}>Privacy Policy </Link>  </ListItem> 
-         <ListItem><Link to='/team' style={faq}>FAQ </Link>  </ListItem> 
-         <ListItem><Link to='/team' style={tandc}>Terms And Conditions </Link>  </ListItem> 
-
+          <div className={classes.sectionMobile} >
+        <div className="first">
+         <ListItem> <Link to='/' className="individual">Get Started</Link> </ListItem>
+         <ListItem> <Link to='/' className="individual">About Us</Link> </ListItem>
+         <ListItem><Link to='/team' className="individual">FAQ </Link>  </ListItem> 
+        </div>    
+        <div className="second">
+          <ListItem><Link to='/team' className="individual">Connect with Us</Link>  </ListItem> 
+          <div className="social-div">
+            <Link className="social" ><InstagramIcon></InstagramIcon></Link>
+            <Link className="social"> <TwitterIcon></TwitterIcon></Link>
+            <Link className="social"><FacebookIcon></FacebookIcon></Link>
+            <Link className="social"><GitHubIcon></GitHubIcon></Link>
           </div>
+
+        </div>
+
+        <div className="third">
+         <ListItem> <Link to='/elements' className="individual">Work with Us</Link>  </ListItem>
+         <ListItem><Link to='/team' className="individual">Privacy Policy </Link>  </ListItem> 
+         <ListItem><Link to='/team' className="individual">Terms And Conditions </Link>  </ListItem> 
+        </div>
+     </div>
+      </div>
         </Toolbar>
 
         </Container>
@@ -95,121 +103,8 @@ function Footer() {
   );
 }
 
-const social = {
-  color:"#f0f0f0",
-  margin:"50px 0 50px 0px",
-}
-
-const get = {
-  display: "grid",
-  position: "relative",
-  top: "8px",
-  right: "680px",
-  width: "200px",
-  height: "100px",
-  color: "rgba(0,0,0,0.6)",
-  textDecoration:"none",
-  fontWeight:"bold",
-  fontSize: "13px",
-  letterSpacing:"2px",
-  textTransform: "uppercase",
-  color: "#F6AF00"
-}
-
-const connect = {
-  position: "absolute",
-  top: "15px",
-  right: "360px",
-  width: "200px",
-  height: "100px",
-  color: "rgba(0,0,0,0.6)",
-  textDecoration:"none",
-  fontWeight:"bold",
-  fontSize: "13px",
-  letterSpacing:"2px",
-  textTransform: "uppercase",
-  color: "#F6AF00"
-}
-
-const work = {
-  position: "absolute",
-  top: "15px",
-  right: "0px",
-  width: "200px",
-  height: "100px",
-  color: "rgba(0,0,0,0.6)",
-  textDecoration:"none",
-  fontWeight:"bold",
-  fontSize: "13px",
-  letterSpacing:"2px",
-  textTransform: "uppercase",
-  color: "#F6AF00"
-}
-
-
-const about = {
-  position: "absolute",
-  top: "50px",
-  right: "875px",
-  width: "200px",
-  height: "100px",
-  color: "rgba(0,0,0,0.6)",
-  textDecoration:"none",
-  fontWeight:"bold",
-  fontSize: "13px",
-  letterSpacing:"2px",
-  textTransform: "uppercase",
-  color: "#F6AF00"
-}
-
-const privacy = {
-  position: "absolute",
-  top: "50px",
-  right: "180px",
-  width: "190px",
-  height: "100px",
-  color: "rgba(0,0,0,0.6)",
-  textDecoration:"none",
-  fontWeight:"bold",
-  fontSize: "13px",
-  letterSpacing:"2px",
-  textTransform: "uppercase",
-  color: "#F6AF00"
-}
-
-const faq = {
-  position: "absolute",
-  top: "80px",
-  right: "920px",
-  width: "200px",
-  height: "100px",
-  color: "rgba(0,0,0,0.6)",
-  textDecoration:"none",
-  fontWeight:"bold",
-  fontSize: "13px",
-  letterSpacing:"2px",
-  textTransform: "uppercase",
-  color: "#F6AF00"
-}
-
-const tandc = {
-  position: "absolute",
-  top: "80px",
-  right: "260px",
-  width: "200px",
-  height: "100px",
-  color: "rgba(0,0,0,0.6)",
-  textDecoration:"none",
-  fontWeight:"bold",
-  fontSize: "13px",
-  letterSpacing:"2px",
-  textTransform: "uppercase",
-  color: "#F6AF00"
-}
-
-
 const appBar =
-{
+{ width: '100%',
   backgroundColor: "Gray" ,
   marginTop:"3%",
 }

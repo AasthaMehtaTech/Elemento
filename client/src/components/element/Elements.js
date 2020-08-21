@@ -1,5 +1,5 @@
 import React, { useEffect, useContext, Fragment } from "react";
-
+import Loader from "../../img/loader1.gif";
 import ElementItem from "./ElementItem";
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
@@ -31,7 +31,7 @@ const Element = () => {
   }, []);
 
   if (elements === null) {
-    return <h1> loading </h1>;
+    return <div className="loading"><img src={Loader}></img> </div>;
   }
   return (
     <Fragment>
