@@ -59,7 +59,7 @@ function PrimarySearchAppBar() {
             <Typography className={classes.title} variant='h6' noWrap>
               <Link to='/' style={companyName}>
                 {" "}
-                Customize Portfolio
+               Elemento
               </Link>
             </Typography>
 

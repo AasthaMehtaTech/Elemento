@@ -19,9 +19,12 @@ const SearchFilter = () => {
     }
   };
   return (
+    <div className="searcharea">
+
     <form className="customSearch">
       <input type={text} className="input"  placeholder="Search Navbar,Footer etc." onChange={onChange}/>
         </form>
+    </div>
   );
 };
 
