@@ -83,9 +83,38 @@ npm install
 ```sh
 npm run dev
 ```
-## Usage
+### Usage
 
-Under Construction :)
+## GET STARTED PAGE / HOME PAGE
+
+Click on `Get started > home page`.
+You can see examples for different elements such as navbar, footer, buttons etc.
+
+
+## ELEMENTS PAGE
+
+How to search for elements according to properties.
+
+Click on `Elements in Navbar > You will be redirected to Elements page > Click on search bar > Select the element` .
+
+## How to view code for elements?
+
+Click on `Elements in Navbar > You will be redirected to Elements page > Click on search bar > Select the element > View Code > Copy code` .
+Select the element and you will have the code for the following element in three different files accordingly.
+
+[View Code](https://media.giphy.com/media/h4CNxgSVxCSBRK7mJs/giphy.gif)
+
+## How to download code for elements?
+
+Click on `Elements in Navbar > You will be redirected to Elements page > Click on search bar > Search and Select the element > Click on Download Button` .
+
+[Download](https://media.giphy.com/media/h4CNxgSVxCSBRK7mJs/giphy.gif)
+
+## TEAM PAGE
+
+How to know/connect to the Team members .
+Click on `Elements in Navbar >  Click on the image > Click on Social media links` .
+
 
 ## Contributing :tada:
 
