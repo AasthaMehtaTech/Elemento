@@ -72,8 +72,10 @@ const useStyles = makeStyles((theme) => ({
           {arr1.map((value) => (
             <Grid key={value} item>
               <Paper className={classes.paper}>
+              <a href="/elements">
 
               <img src={value.id} alt={value.alt} className="exampleImage" />
+              </a>
               </Paper>
             </Grid>
           ))}
@@ -84,7 +86,9 @@ const useStyles = makeStyles((theme) => ({
           {arr2.map((value) => (
             <Grid key={value} item>
               <Paper className={classes.paper}>
+              <a href="/elements">
               <img src={value.id} alt={value.alt} className="exampleImage" />
+              </a>
               </Paper>
             </Grid>
           ))}
@@ -96,7 +100,9 @@ const useStyles = makeStyles((theme) => ({
           {arr3.map((value) => (
             <Grid key={value} item>
               <Paper className={classes.paper}>
+              <a href="/elements">
               <img src={value.id} alt={value.alt} className="exampleImage" />
+              </a>
               </Paper>
             </Grid>
           ))}

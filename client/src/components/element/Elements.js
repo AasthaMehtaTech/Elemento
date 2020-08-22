@@ -1,6 +1,7 @@
 import React, { useEffect, useContext, Fragment } from "react";
-
+import Loader from "../../img/loader1.gif";
 import ElementItem from "./ElementItem";
+import '../../App.css'
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -21,7 +22,7 @@ const Element = () => {
   const classes = useStyles();
 
   const elementContext = useContext(ElementContext);
-  const { getElements, elements, loading, filtered } = elementContext;
+  const { getElements, elements,filtered } = elementContext;
 
   useEffect(() => {
     if(elements === null){
@@ -31,7 +32,7 @@ const Element = () => {
   }, []);
 
   if (elements === null) {
-    return <h1> loading </h1>;
+    return <div className="loading"><img src={Loader}></img> </div>;
   }
   return (
     <Fragment>
