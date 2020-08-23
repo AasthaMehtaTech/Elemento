@@ -102,7 +102,7 @@ npm run dev
 
 ![View Code](https://media.giphy.com/media/f8mpLT6Un0zRf78Pah/giphy.gif)
 
-### How to know/connect to the Team members
+### How to know/connect to the Team members?
 
 1. Click on `Elements in Navbar` .
 2. Click on the `image`.
