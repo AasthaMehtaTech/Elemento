@@ -85,21 +85,28 @@ npm run dev
 ```
 ## Usage
 
-# How to search for elements according to properties.
+### How to search for elements according to properties?
 
-Click on `Elements in Navbar > You will be redirected to Elements page > Click on search bar > Select the element` .
+1. Click on `Elements in Navbar` 
+2. Click on `search bar`.
+3. Enter the properties.
 
-# How to view and download code for elements?
+### How to view and download code for elements?
 
-Click on `Elements in Navbar > You will be redirected to Elements page > Click on search bar > Select the element > View Code / Download Code` .
-1. On clicking View code you will be provided with HTML, CSS and JS code.
-2. On clicking download , the files will be downloaded.
+1. Click on `Elements in Navbar` .
+2. Select the element .
+3. Click on `View Code / Download Code` .
+
+* On clicking View code you will be provided with HTML, CSS and JS code.
+* On clicking download , the files will be downloaded.
 
 ![View Code](https://media.giphy.com/media/f8mpLT6Un0zRf78Pah/giphy.gif)
 
-# How to know/connect to the Team members
+### How to know/connect to the Team members
 
-Click on `Elements in Navbar >  Click on the image > Click on Social media links` .
+1. Click on `Elements in Navbar` .
+2. Click on the `image`.
+3. Click on `Social media links` .
 
 
 ## Contributing :tada:
