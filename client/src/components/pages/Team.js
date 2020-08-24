@@ -34,14 +34,9 @@ const Team = () => {
     <ScrollTopButton /> 
     <Container className="contentTeam">
       <h1 className="titleTeam">About Us</h1>
-      <p className="paraTeam"> A set of small, responsive CSS modules that you can use in every web project,
-        portfolio or both.
-        A set of small, responsive CSS modules that you can use in every web project,
-        portfolio or both.
-        A set of small, responsive CSS modules that you can use in every web project,
-        portfolio or both.
-        A set of small, responsive CSS modules that you can use in every web project,
-        portfolio or both.
+      <p className="paraTeam">Customizable Portfolio is a website that aims to help people make a fully functional static website in a short amount of time without relying on web developers and that too with very little prior programming experience.
+
+This project is part of PSoC (Program Summer of Code) organized by UIET Chandigarh. It is a 2 month long open source competition to help people get started with open source with the help of experienced mentors.
       </p>      
     </Container> 
     <div className="teamSet">
