@@ -12,15 +12,16 @@ const imgsize = {
   width: "200px",
   height: "100%",
   textAlign:"center",
-  color:"#e6731c",
+  color:"black",
   padding: '8px',
+  fontFamily:'Helvetica'
 };
 const center = {
   textAlign: "center",
   verticalAlign: "center",
 };
 const avatar = {
-  width:"150px",
+  width:"180px",
   height:"180px",
   position:"relative",
   maxWidth: "100%",

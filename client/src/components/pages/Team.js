@@ -8,7 +8,6 @@ import { Container } from '@material-ui/core';
 import ProfileModal from "../layout/ProfileModal";
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
@@ -30,7 +29,6 @@ const Team = () => {
   return (
  
   <div className="backTeam" >
-  <div className="backgg">
     <Navbar />
     <ScrollTopButton /> 
     <Container className="contentTeam">
@@ -45,13 +43,14 @@ const Team = () => {
         portfolio or both.
       </p>      
     </Container> 
+  <div className="backgg">
     <div className="teamSet">
       <Grid container className={classes.root} spacing={8}>
           <Grid item xs={12}>
           <Grid container justify="center" spacing={spacing}>
             {[0,1,2,3].map((value) => (
               <Grid key={value} item>
-                <ProfileModal 
+                <ProfileModal
           PersonName={profileKey[value].PersonName}
           PersonRole={profileKey[value].PersonRole}
           PersonBio={profileKey[value].PersonBio}

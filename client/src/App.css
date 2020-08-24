@@ -154,3 +154,8 @@
     margin-right: auto;
     justify-content: center;
 }
+.backgg{
+    z-index: -111;
+    background: url(./img/Blueback.svg) no-repeat ;
+    background-size: cover;         
+}

@@ -16,8 +16,8 @@
     bio:"This is Akash Krishna  an Undergrad Student , Full Stack Developer and Cyber Security Enthusiast"
   },
   {
-    PersonName:"XYZ",
-    PersonRole:"Software",
+    PersonName:"Sarthak Kundra",
+    PersonRole:"Software Developer",
     PersonBio:"Hi there!",
     PersonImg:"https://images.unsplash.com/photo-1503249023995-51b0f3778ccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=311&q=80",
 
@@ -28,7 +28,7 @@
     bio:"Second bro loves to design amazing features list and is expert at handling customer experience."
   },
   {
-    PersonName:"XYZ",
+    PersonName:"Aastha Mehta",
     PersonRole:"Software developer",
     PersonBio:"Hi there!",
     PersonImg:"https://images.unsplash.com/photo-1503249023995-51b0f3778ccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=311&q=80",
@@ -40,7 +40,7 @@
     bio:"Second bro loves to design amazing features list and is expert at handling customer experience."
   },
   {
-    PersonName:"XYZ",
+    PersonName:"Vidit Jindal",
     PersonRole:"Software developer",
     PersonBio:"Hi there!",
     PersonImg:"https://images.unsplash.com/photo-1503249023995-51b0f3778ccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=311&q=80",

@@ -7,6 +7,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import { ListItem } from "@material-ui/core";
+import Logo from "../../img/Logo_SVG.svg"
 const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
@@ -57,9 +58,9 @@ function PrimarySearchAppBar() {
         <Container fixed>
           <Toolbar>
             <Typography className={classes.title} variant='h6' noWrap>
-              <Link to='/' style={companyName}>
+              <Link to='/' >
                 {" "}
-               Elemento
+              <img src={Logo} alt="Elemento"style={companyName} />
               </Link>
             </Typography>
 
@@ -98,11 +99,8 @@ function PrimarySearchAppBar() {
 }
 
 const companyName = {
-  color: "rgba(0,0,0,0.6)",
-  textDecoration: "none",
-  fontWeight: "bold",
-  fontSize: "26px",
-  letterSpacing: "1px",
+   width:"auto",
+   height: "2vw"
   };
 const customStyle = {
   color: "rgba(0,0,0,0.6)",
