@@ -34,7 +34,8 @@ const iconColor = {
 }
 const containerDiv = {
   background:'linearGradient(rgba(250,0,0,0.5),transparent)',
-  border: "5px solid #ff8b2b",
+  border: "5px solid rgba(250,250,250,0.5)",
+  borderRadius:"10px",
   color:'#ddd',
   backgroundImage: 'linearGradient(to bottom right, #fa7c28, #d9adff)',
   opacity:'0.85',

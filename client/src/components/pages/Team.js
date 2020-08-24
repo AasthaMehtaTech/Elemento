@@ -27,8 +27,9 @@ const Team = () => {
   const classes = useStyles();
  
   return (
- 
-  <div className="backTeam" >
+    <div>
+
+    <div className="backTeam" >
     <Navbar />
     <ScrollTopButton /> 
     <Container className="contentTeam">
@@ -43,7 +44,6 @@ const Team = () => {
         portfolio or both.
       </p>      
     </Container> 
-  <div className="backgg">
     <div className="teamSet">
       <Grid container className={classes.root} spacing={8}>
           <Grid item xs={12}>
@@ -68,10 +68,10 @@ const Team = () => {
       </Grid>
 
     </div>  
-    
+      </div>    
     <Footer />
-    </div>
-    </div>
+    </div>  
+
       
   )
 }

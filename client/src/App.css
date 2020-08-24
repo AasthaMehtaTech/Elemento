@@ -4,7 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+       
 }
 .title{
    color:#707070;
@@ -20,16 +20,23 @@
     font-size: 20px;
 
    }
+   .sec-backImage{
+    position: relative;
+    color: white;
+   }
 
-
- .sec-backImage{
-     background-image: url(./img/Background\ diagrams.svg);
-     height: auto;
-     width:auto;
-     background-position: center;
-     background-repeat: no-repeat;
+ .sec-backImage::after{
+     content: "";
+     opacity: 0.3;
+     background: url("./img/Background\ diagrams.svg")  no-repeat fixed top;
+     background-blend-mode: lighten;
      background-size: cover;
-     /* opacity: 0.6; */
+     top:0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     position: absolute; 
+     z-index: -11111;
      
  }
  
@@ -154,8 +161,24 @@
     margin-right: auto;
     justify-content: center;
 }
-.backgg{
-    z-index: -111;
-    background: url(./img/Blueback.svg) no-repeat ;
-    background-size: cover;         
+
+.teamSet{
+    padding-bottom: 10vh;
+}
+.backTeam{
+    position: relative;
+    color: white;
+}
+.backTeam::after{
+    content: "";
+    opacity: 0.2;
+    background: url("./img/BG.svg") no-repeat fixed top;
+    background-blend-mode: lighten;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -199;
 }
