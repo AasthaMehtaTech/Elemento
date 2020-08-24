@@ -17,7 +17,7 @@
 
 ## About The Project :heart:
 
-![Customizable Portfolio Screenshot](https://github.com/AasthaGithub/TestGit/blob/master/Website%20Home%20Page%20Screenshot.JPG)
+![Customizable Portfolio Screenshot](https://github.com/Vidit-jindal/hello-world/blob/master/CustomizablePortfolio.png)
 
 Customizable Portfolio is a website that aims to help people make a fully functional static website in a short amount of time without relying on web developers and that too with very little prior programming experience.
 
@@ -85,7 +85,28 @@ npm run dev
 ```
 ## Usage
 
-Under Construction :)
+### How to search for elements according to properties?
+
+1. Click on `Elements in Navbar` 
+2. Click on `search bar`.
+3. Enter the properties.
+
+### How to view and download code for elements?
+
+1. Click on `Elements in Navbar` .
+2. Select the element .
+3. Click on `View Code / Download Code` .
+
+* On clicking View code you will be provided with HTML, CSS and JS code.
+* On clicking download , the files will be downloaded.
+
+![View Code](https://media.giphy.com/media/f8mpLT6Un0zRf78Pah/giphy.gif)
+
+### How to know/connect to the Team members?
+
+1. Click on `Elements in Navbar` .
+2. Click on the `image`.
+3. Click on `Social media links` .
 
 ## Contributing :tada:
 
