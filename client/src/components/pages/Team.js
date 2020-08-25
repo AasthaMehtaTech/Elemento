@@ -2,7 +2,7 @@ import React from 'react';
 import '../../App.css';
 import Footer from '../layout/Footer';
 import Navbar from '../layout/Navbar';
-import {profileKey} from '../layout/TeamDetails';
+import {profileKey} from '../../Data/TeamDetails';
 import ScrollTopButton from '../layout/ScrollTopButton';
 import { Container } from '@material-ui/core';
 import ProfileModal from "../layout/ProfileModal";

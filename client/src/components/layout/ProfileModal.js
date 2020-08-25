@@ -69,7 +69,7 @@ export default function ProfileModal(props) {
           
           <div id="simple-modal-description" style={{textAlign:"center"}}> 
             <h2 id="simple-modal-title">{props.PersonName}</h2>            
-            <p>{props.PersonRole}</p>  
+           
             
           </div>
         </div>
