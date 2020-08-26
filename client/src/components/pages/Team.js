@@ -2,13 +2,12 @@ import React from 'react';
 import '../../App.css';
 import Footer from '../layout/Footer';
 import Navbar from '../layout/Navbar';
-import {profileKey} from '../layout/TeamDetails';
+import {profileKey} from '../../Data/TeamDetails';
 import ScrollTopButton from '../layout/ScrollTopButton';
 import { Container } from '@material-ui/core';
 import ProfileModal from "../layout/ProfileModal";
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
@@ -28,21 +27,16 @@ const Team = () => {
   const classes = useStyles();
  
   return (
- 
-  <div className="backTeam" >
-  <div className="backgg">
+    <div>
+
+    <div className="backTeam" >
     <Navbar />
     <ScrollTopButton /> 
     <Container className="contentTeam">
       <h1 className="titleTeam">About Us</h1>
-      <p className="paraTeam"> A set of small, responsive CSS modules that you can use in every web project,
-        portfolio or both.
-        A set of small, responsive CSS modules that you can use in every web project,
-        portfolio or both.
-        A set of small, responsive CSS modules that you can use in every web project,
-        portfolio or both.
-        A set of small, responsive CSS modules that you can use in every web project,
-        portfolio or both.
+      <p className="paraTeam">Customizable Portfolio is a website that aims to help people make a fully functional static website in a short amount of time without relying on web developers and that too with very little prior programming experience.
+
+This project is part of PSoC (Program Summer of Code) organized by UIET Chandigarh. It is a 2 month long open source competition to help people get started with open source with the help of experienced mentors.
       </p>      
     </Container> 
     <div className="teamSet">
@@ -51,7 +45,7 @@ const Team = () => {
           <Grid container justify="center" spacing={spacing}>
             {[0,1,2,3].map((value) => (
               <Grid key={value} item>
-                <ProfileModal 
+                <ProfileModal
           PersonName={profileKey[value].PersonName}
           PersonRole={profileKey[value].PersonRole}
           PersonBio={profileKey[value].PersonBio}
@@ -69,10 +63,10 @@ const Team = () => {
       </Grid>
 
     </div>  
-    
+      </div>    
     <Footer />
-    </div>
-    </div>
+    </div>  
+
       
   )
 }

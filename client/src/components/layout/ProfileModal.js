@@ -12,15 +12,16 @@ const imgsize = {
   width: "200px",
   height: "100%",
   textAlign:"center",
-  color:"#e6731c",
+  color:"black",
   padding: '8px',
+  fontFamily:'Helvetica'
 };
 const center = {
   textAlign: "center",
   verticalAlign: "center",
 };
 const avatar = {
-  width:"150px",
+  width:"180px",
   height:"180px",
   position:"relative",
   maxWidth: "100%",
@@ -33,7 +34,8 @@ const iconColor = {
 }
 const containerDiv = {
   background:'linearGradient(rgba(250,0,0,0.5),transparent)',
-  border: "5px solid #ff8b2b",
+  border: "5px solid rgba(250,250,250,0.5)",
+  borderRadius:"10px",
   color:'#ddd',
   backgroundImage: 'linearGradient(to bottom right, #fa7c28, #d9adff)',
   opacity:'0.85',
@@ -67,7 +69,7 @@ export default function ProfileModal(props) {
           
           <div id="simple-modal-description" style={{textAlign:"center"}}> 
             <h2 id="simple-modal-title">{props.PersonName}</h2>            
-            <p>{props.PersonRole}</p>  
+           
             
           </div>
         </div>
