@@ -1,5 +1,3 @@
-  var githublink = "www.google.com";
-  var linkedinlink = "www.google.com";
 
   var profileKey = [{
     PersonName:"Akash Krishna",
