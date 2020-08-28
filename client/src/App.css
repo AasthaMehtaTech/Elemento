@@ -1,3 +1,22 @@
+.navbar-links:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0px;
+    height: 4px;
+    width: 100%;
+    background:#9c20ee;
+    opacity: 0;
+    transition: all 0.2s swirl;
+}
+.navbar-links:hover:after{
+    opacity: 1;
+    bottom: 8px; 
+   
+}
+.navbar-links:hover{
+    color: #EE82EE;
+}
 .back-image{
     background-image: url(./img/home.svg);
     height: 100vh;

@@ -67,18 +67,18 @@ function Footer() {
           <div className={classes.sectionDesktop}>
           <div className={classes.sectionMobile} >
         <div className="first">
-         <ListItem> <Link to='/elements' className="individual">Get Started</Link> </ListItem>
-         <ListItem> <Link to='/team' className="individual">About Us</Link> </ListItem>        
+         <ListItem className="navbar-links"> <Link to='/elements' className="individual">Get Started</Link> </ListItem>
+         <ListItem className="navbar-links"> <Link to='/team' className="individual">About Us</Link> </ListItem>        
         </div>    
         <div className="second">
-          <div className="social-div">
+          <div className="social-div navbar-links">
             <a href="https://github.com/AasthaGithub/Customizable_Portfolio" className="social"><GitHubIcon></GitHubIcon></a>
           </div>
         </div>
 
         <div className="third">
-          <ListItem> <Link to='/elements' className="individual">Work with Us</Link>  </ListItem>
-          <ListItem><Link to='/team' className="individual">Connect with Us</Link>  </ListItem> 
+          <ListItem className="navbar-links"> <Link to='/elements' className="individual">Work with Us</Link>  </ListItem>
+          <ListItem className="navbar-links"><Link to='/team' className="individual">Connect with Us</Link>  </ListItem> 
         </div>
      </div>
       </div>
