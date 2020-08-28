@@ -4,8 +4,6 @@ import React from "react";
 // import { makeStyles } from '@material-ui/core/styles';
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import FacebookIcon from "@material-ui/icons/Facebook";
 import Popover from '@material-ui/core/Popover';
 
 const imgsize = {
@@ -96,16 +94,11 @@ export default function ProfileModal(props) {
               <p style={imgsize}>{props.PersonRole}</p>  
               <p style={{color:'black'}}>{props.bio}</p>            
               <div style={center}>
-                <a href={props.fblink}>
-                  <FacebookIcon style={iconColor} />
-                </a>
-                <a href={props.instalink}>
-                  <InstagramIcon style={iconColor} />
-                </a>
-                <a href={props.githublink}>
+               
+                <a href={props.githublink} target="_blank">
                   <GitHubIcon style={iconColor}/>
                 </a>
-                <a href={props.linkedinlink}>
+                <a href={props.linkedinlink} target="_blank">
                   <LinkedInIcon style={iconColor}/>
                 </a>
               </div>

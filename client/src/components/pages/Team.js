@@ -50,8 +50,6 @@ This project is part of PSoC (Program Summer of Code) organized by UIET Chandiga
           PersonRole={profileKey[value].PersonRole}
           PersonBio={profileKey[value].PersonBio}
           PersonImg={profileKey[value].PersonImg}
-          fblink={profileKey[value].fblink}
-          instalink={profileKey[value].instalink}
           githublink={profileKey[value].githublink}
           linkedinlink={profileKey[value].linkedinlink}
           bio={profileKey[value].bio}

@@ -66,24 +66,24 @@ function PrimarySearchAppBar() {
 
             <div className={classes.grow} />
             <div className={classes.sectionDesktop}>
-              <ListItem>
+              <ListItem className="navbar-links">
                 {" "}
                 <Link to='/' style={customStyle}>
                   Home
                 </Link>{" "}
               </ListItem>
-              <ListItem>
+              <ListItem className="navbar-links">
                 <Link to='/team' style={customStyle}>
                   Team
                 </Link>{" "}
               </ListItem>
-              <ListItem>
+              <ListItem className="navbar-links">
                 {" "}
                 <Link to='/elements' style={customStyle}>
                   Elements
                 </Link>{" "}
               </ListItem>
-              <ListItem>
+              <ListItem className="navbar-links">
                 {" "}
                 <Link to='/contribute' style={customStyle}>
                   Contribute
