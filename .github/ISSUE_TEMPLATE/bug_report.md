@@ -1,14 +1,18 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: 'BUG #NAME'
-labels: bug, needs triage, just opened
+title: 'Bug in #name_err_functionality'
+labels: bug, just opened, needs triage
 assignees: ''
 
 ---
 
 **Type of issue**
-A few word description of what the bug is related to. Eg: Documentation, Home Page, Styling, Loading Speed, Etc.
+A few word description of what the bug is related to. Eg:
+- Documentation
+- Home Page
+- Styling
+- Loading Speed, Etc.
 
 **Bug Description**
 A clear and concise description of what the bug is.

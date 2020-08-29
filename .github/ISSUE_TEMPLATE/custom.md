@@ -1,7 +1,7 @@
 ---
 name: Custom issue template
 about: Describe this issue template's purpose here.
-title: 'ISSUE #NAME'
+title: 'Issue of #StateTypeHere'
 labels: help wanted, just opened
 assignees: ''
 
@@ -12,6 +12,7 @@ assignees: ''
 
 **Description**
 - Briefly expressed issue or any help wanted
+
 
 **Screenshots (if any)**
 - Add URL here
