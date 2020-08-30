@@ -95,10 +95,10 @@ export default function ProfileModal(props) {
               <p style={{color:'black'}}>{props.bio}</p>            
               <div style={center}>
                
-                <a href={props.githublink} target="_blank">
+                <a href={props.githublink} target="_blank" rel="noopener noreferrer">
                   <GitHubIcon style={iconColor}/>
                 </a>
-                <a href={props.linkedinlink} target="_blank">
+                <a href={props.linkedinlink} target="_blank" rel="noopener noreferrer">
                   <LinkedInIcon style={iconColor}/>
                 </a>
               </div>
