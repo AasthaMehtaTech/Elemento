@@ -136,5 +136,5 @@ For any query or build issues feel free to reach out the maintainers:<br>
  
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See [`LICENSE`](https://github.com/AasthaGithub/Customizable_Portfolio/blob/master/LICENSE) for more information.
 
