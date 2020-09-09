@@ -6,6 +6,8 @@ import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
 
 import ElementContext from "../../context/element/elementContext";
+import clearSelected from "../../utils/clearSelected";
+import downloadAllCode from "../../utils/downloadAllCode";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,7 +29,8 @@ const Element = () => {
   useEffect(() => {
     if(elements === null){
       getElements();
-    }
+    };
+    clearSelected();
     
   }, []);
 
@@ -48,6 +51,7 @@ const Element = () => {
               name={element.name}
               img={element.screenshot.data}
               key={element._id}
+              id={element._id}
             />
           )):  filtered.map((element) => (
               <ElementItem
@@ -57,6 +61,7 @@ const Element = () => {
                 name={element.name}
                 img={element.screenshot.data}
                 key={element._id}
+                id={element._id}
               />
             ))}
       </div>
