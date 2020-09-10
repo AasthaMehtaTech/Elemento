@@ -99,7 +99,7 @@ const ElementItem = ({ name, img, HTMLCode, CSSCode, JSCode, id }) => {
           >
             View Code
           </Button>
-          <Checkbox 
+          <Checkbox
             onChange={handleChange}
             inputProps={{'aria-label': 'secondary checkbox'}}
           />
