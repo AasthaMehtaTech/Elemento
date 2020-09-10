@@ -4,7 +4,8 @@ import App from '../App';
 
 describe('Testing App page', () => {
    it('renders without crashing', () => {
-    shallow(<App />);
+    const wrapper = shallow(<App />);
+    expect(wrapper).toMatchSnapshot();
     });
     
 });

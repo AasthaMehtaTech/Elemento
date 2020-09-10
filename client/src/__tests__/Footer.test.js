@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, mount } from 'enzyme'
 import Footer from '../components/layout/Footer'
 
      
@@ -8,6 +8,11 @@ import Footer from '../components/layout/Footer'
         const wrapper = shallow(<Footer/>);
         expect(wrapper).toMatchSnapshot();
         
+    });
+
+    test('Renders the links in Footer',()=>{
+        const socialwrapper = mount(<Footer/>);
+        expect(socialwrapper.find('.social').toMatchSnapshot());
     });
     
 
