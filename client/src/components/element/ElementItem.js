@@ -23,7 +23,8 @@ const useStyles = makeStyles({
   },
 });
 
-const ElementItem = ({ name, img, HTMLCode, CSSCode, JSCode, id }) => {
+const ElementItem = ({ name, img, HTMLCode, CSSCode, JSCode, id, clearCheckBox }) => {
+
   const classes = useStyles();
 
   const [isOpen, setIsOpen] = useState(false);
@@ -46,6 +47,10 @@ const ElementItem = ({ name, img, HTMLCode, CSSCode, JSCode, id }) => {
           selected_set.add(id);
       }
   });
+
+  useEffect(() => {
+    setChecked(false)
+  },[clearCheckBox])
 
   const handleChange = (event) => {
       setChecked(event.target.checked);
@@ -99,7 +104,8 @@ const ElementItem = ({ name, img, HTMLCode, CSSCode, JSCode, id }) => {
           >
             View Code
           </Button>
-          <Checkbox 
+          <Checkbox
+            checked={checked}
             onChange={handleChange}
             inputProps={{'aria-label': 'secondary checkbox'}}
           />
