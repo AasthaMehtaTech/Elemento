@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Element = () => {
+const Element = ({uncheckBox}) => {
   const classes = useStyles();
 
   const elementContext = useContext(ElementContext);
@@ -31,7 +31,7 @@ const Element = () => {
       getElements();
     };
     clearSelected();
-    
+
   }, []);
 
   if (elements === null) {
@@ -40,7 +40,7 @@ const Element = () => {
   return (
     <Fragment>
     <Container maxWidth='lg'>
-      
+
       <div className={classes.root}>
         {filtered === null
           ? elements.map((element) => (
@@ -52,6 +52,7 @@ const Element = () => {
               img={element.screenshot.data}
               key={element._id}
               id={element._id}
+              clearCheckBox={uncheckBox}
             />
           )):  filtered.map((element) => (
               <ElementItem
