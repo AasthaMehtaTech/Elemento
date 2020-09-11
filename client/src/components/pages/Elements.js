@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Button from '@material-ui/core/Button';
 
 import Navbar from '../layout/Navbar';
@@ -14,21 +14,27 @@ import {appendAll} from "../../utils/buildAll";
 
 
 const Elements = () => {
+    let [uncheckAll, setUncheckAll] = useState(true)
+
+    const uncheckBox = () => {
+        setUncheckAll(!uncheckAll)
+    }
+
     return (
         <div>
             <ElementState>
-               
+
             <Navbar />
             <SearchFilter />
             <ScrollTopButton />
-            <Element />
+            <Element uncheckBox={uncheckAll}/>
             <Button variant="outlined" color="primary" onClick={() => { appendAll(); }}>
                 Merge
             </Button>
-            <Button variant="outlined" color="primary" onClick={() => { downloadAllCode(); }}>
-                Download All 
+            <Button variant="outlined" color="primary" onClick={() => { downloadAllCode(); uncheckBox(); }}>
+                Download All
             </Button>
-    
+
             </ElementState>
             <Footer/>
         </div>
