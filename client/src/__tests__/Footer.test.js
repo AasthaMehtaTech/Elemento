@@ -10,9 +10,5 @@ import Footer from '../components/layout/Footer'
         
     });
 
-    test('Renders the links in Footer',()=>{
-        const socialwrapper = mount(<Footer/>);
-        expect(socialwrapper.find('.social').toMatchSnapshot());
-    });
     
 
