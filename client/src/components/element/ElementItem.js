@@ -8,6 +8,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import Checkbox from '@material-ui/core/Checkbox';
+import clearSelected from "../../utils/clearSelected";
 
 import CodeIcon from "@material-ui/icons/Code";
 import GetAppRoundedIcon from "@material-ui/icons/GetAppRounded";
@@ -50,6 +51,7 @@ const ElementItem = ({ name, img, HTMLCode, CSSCode, JSCode, id, clearCheckBox }
 
   useEffect(() => {
     setChecked(false)
+    clearSelected()
   },[clearCheckBox])
 
   const handleChange = (event) => {
