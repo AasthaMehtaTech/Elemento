@@ -43,7 +43,7 @@ This project is part of PSoC (Program Summer of Code) organized by UIET Chandiga
       <Grid container className={classes.root} spacing={8}>
           <Grid item xs={12}>
           <Grid container justify="center" spacing={spacing}>
-            {[0,1,2,3].map((value) => (
+            {[0,1,2,3,4].map((value) => (
               <Grid key={value} item>
                 <ProfileModal
           PersonName={profileKey[value].PersonName}

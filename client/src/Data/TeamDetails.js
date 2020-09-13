@@ -36,6 +36,15 @@
     bio:"This is Vidit Jindal from Jaypee University of Information Technology, Solan . He is a Software and Web Developer and is exploring the concepts of Machine Learning and Data Science "
   },
    
+  {
+    PersonName:"Anurag kapoor",
+    PersonRole:"Designer",
+    PersonBio:"Hi there!",
+    PersonImg:"https://static.thenounproject.com/png/17241-200.png",
+    githublink:"",
+    linkedinlink:"https://www.linkedin.com/in/anurag-kapoor-8168a01aa",
+    bio:"Loves to create web designs and strives at improving the User experience and User interface."
+  },
 ];
 
 export {profileKey};
