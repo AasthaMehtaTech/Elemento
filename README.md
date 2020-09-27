@@ -1,5 +1,7 @@
 # Elemento (Customizable_Portfolio)
 
+[![Join the chat at https://gitter.im/Elemento-Customizable-portfolio/Elemento](https://badges.gitter.im/Elemento-Customizable-portfolio/Elemento.svg)](https://gitter.im/Elemento-Customizable-portfolio/Elemento?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Table of Contents
 
 * [About the Project](#about-the-project-heart)
