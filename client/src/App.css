@@ -1,4 +1,27 @@
-.navbar-links:after{
+
+
+.navbar-links{
+    position: relative;
+}
+
+.navbar-links:before{
+    content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #9c20ee;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-links:hover:before{
+    visibility: visible;
+  transform: scaleX(1);
+}
+/* .navbar-links:after{
     position: absolute;
     content: '';
     left: 0;
@@ -16,7 +39,7 @@
 }
 .navbar-links:hover{
     color: #EE82EE;
-}
+} */
 .back-image{
     background-image: url(./img/home.svg);
     height: 100vh;
@@ -29,6 +52,7 @@
    color:#707070;
     letter-spacing: 2px;
     font-size: 4vh;
+    
     padding-bottom: 2vh;
 
     margin-top: 10vh;
@@ -68,10 +92,11 @@
 .titleTeam{
     color:#707070;
      letter-spacing: 2px;
-     font-size: 4vh;
+     font-size: 5vh;
      padding-bottom: 2vh;
       text-align: center;
      margin-top: 5vh;
+     font-weight: bolder;
       
  }
  .paraTeam{
